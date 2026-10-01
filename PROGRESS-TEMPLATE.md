@@ -1,0 +1,43 @@
+# Progress: <your name>
+
+Copy this file to `deliverables/<your-name>/PROGRESS.md` and fill it in as you go.
+
+**Track:** A / B / C / D / E
+**Start date:**
+**Hours per week:**
+
+Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
+
+| Sprint | Skill area | Level | Deliverable link | Peer reviewer | Done |
+| --- | --- | --- | --- | --- | --- |
+| S0 | Lab and foundations | | | | [ ] |
+| S1 | Networking and name resolution | | | | [ ] |
+| S2 | Identity and directory services | | | | [ ] |
+| S3 | Hybrid identity and governance | | | | [ ] |
+| S4 | Compute and virtualization | | | | [ ] |
+| S5 | Storage and file services | | | | [ ] |
+| S6 | Security and hardening | | | | [ ] |
+| S7 | Monitoring, backup, troubleshooting | | | | [ ] |
+| S8 | Automation and infrastructure as code | | | | [ ] |
+| S9 | Cloud architecture and operations | | | | [ ] |
+| S10 | Linux services and advanced admin | | | | [ ] |
+| S11 | Security operations, governance, risk | | | | [ ] |
+| S12 | Containers, virtualization, HA | | | | [ ] |
+| S13 | Capstone | | | | [ ] |
+
+## Exams
+
+| Exam | Readiness gate met | Booked for | Result | Date |
+| --- | --- | --- | --- | --- |
+| AZ-802 | [ ] | | | |
+| AZ-104 | [ ] | | | |
+| Cloud+ | [ ] | | | |
+| Linux+ | [ ] | | | |
+| LPIC-1 | [ ] | | | |
+| Security+ | [ ] | | | |
+| LPIC-2 | [ ] | | | |
+| LPIC-3 (track: ) | [ ] | | | |
+
+## Notes and lessons
+
+- 

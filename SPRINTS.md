@@ -1,0 +1,296 @@
+# Sprint plan
+
+Fourteen sprints, S0 through S13. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
+
+**Pacing assumption:** about 8 hours per week (3 reading or video, 4 hands-on lab, 1 review). Change the pace and the calendar moves, but not the order. Week counts below are planning estimates.
+
+**Windows-first ordering:** S1 to S8 lean Windows and Azure so the AZ-802 gate lands first (your target is within 3 to 6 months). Each of those sprints has a short **Linux lane** to build the Linux skills in parallel.
+
+Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md).
+
+| Sprint | Skill area | Weeks | Running total |
+| --- | --- | --- | --- |
+| S0 | Lab and foundations | 2 | 2 |
+| S1 | Networking and name resolution | 3 | 5 |
+| S2 | Identity and directory services | 4 | 9 |
+| S3 | Hybrid identity and governance | 3 | 12 |
+| S4 | Compute and virtualization | 3 | 15 |
+| S5 | Storage and file services | 3 | 18 |
+| S6 | Security and hardening | 3 | 21 |
+| S7 | Monitoring, backup, troubleshooting | 3 | 24 |
+| **Gate** | **AZ-802 exam** (plus 1 review week) | 1 | 25 |
+| S8 | Automation and infrastructure as code | 3 | 28 |
+| **Gate** | **AZ-104 exam** (plus 1 review week) | 1 | 29 |
+| S9 | Cloud architecture and operations | 3 | 32 |
+| **Gate** | **Cloud+ exam** (1 review week) | 1 | 33 |
+| S10 | Linux services and advanced admin | 4 | 37 |
+| **Gate** | **Linux+ and LPIC-1** (2 review weeks) | 2 | 39 |
+| S11 | Security operations, governance, risk | 3 | 42 |
+| **Gate** | **Security+** (1 review week) | 1 | 43 |
+| S12 | Containers, virtualization, HA | 4 | 47 |
+| **Gate** | **LPIC-2** (2 review weeks) | 2 | 49 |
+| S13 | Capstone | 3 | 52 |
+| **Gate** | **LPIC-3, one track** (2 review weeks) | 2 | 54 |
+
+That's 54 weeks, about 12.5 months at 8 hours per week. The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
+
+**First exam timing:** AZ-802 lands at week 25 (about 5.8 months) at 8 hours per week, the top of a 3 to 6 month target. At 12 hours per week it lands around week 17 (about 4 months).
+
+**Security+ timing:** V8 is expected around Nov 17, 2026. This plan reaches Security+ well after that, so study V8 objectives. Check comptia.org for the final exam code and objectives.
+
+---
+
+## S0. Lab and foundations (2 weeks)
+
+**Outcome:** a working, snapshotted lab, and comfort with the command line on both operating systems.
+
+**Skills:** VMware Workstation networking, snapshots, Git basics, PowerShell and Bash basics, Linux filesystem layout, package management, reading logs.
+
+**Labs**
+1. Build the virtual networks and the router VM from LAB-ENVIRONMENT.md.
+2. Install Windows Server, a Debian-family VM and a RHEL-family VM. Snapshot each as `clean-install`.
+3. Copy this kit into your own Git repo, commit a change to your own progress file, and push.
+4. Linux lane: navigate the filesystem, use `apt` and `dnf`, edit with `nano` and `vim`, read `journalctl` output.
+
+**Prove it:** screenshot of all VMs running with correct IPs, plus a first commit in your progress file.
+
+**Certs:** foundation for everything. LPIC-1 topics: system architecture, installation and package management, GNU and Unix commands.
+
+## S1. Networking and name resolution (3 weeks)
+
+**Outcome:** you can design and troubleshoot addressing, DNS and DHCP on both platforms.
+
+**Skills:** IPv4 subnetting, routing, NAT, DNS zones and records, DHCP scopes and relay, hybrid name resolution concepts, firewall basics.
+
+**Labs**
+1. Configure the Linux router VM to route between the corp and branch networks with NAT to the internet.
+2. Install DNS and DHCP on SRV1. Create forward and reverse zones. Add a DHCP scope with reservations.
+3. Configure DHCP relay across the router to serve the branch network.
+4. Set up a conditional forwarder and test it with `nslookup` and `Resolve-DnsName`.
+5. Linux lane: configure static addressing with NetworkManager or netplan, run `bind9` or `dnsmasq` as a second resolver, capture traffic with `tcpdump`.
+
+**Prove it:** a network diagram, and a one-page runbook showing how you diagnosed three deliberately broken settings (wrong gateway, wrong DNS, missing route).
+
+**Certs:** AZ-802 (on-premises and hybrid networking), AZ-104 (virtual networking concepts), LPIC-1 (networking fundamentals), LPIC-2 (networking configuration).
+
+## S2. Identity and directory services (4 weeks)
+
+**Outcome:** you can build and run an Active Directory environment and apply policy at scale.
+
+**Skills:** AD DS deployment, sites and replication, multi-domain concepts, users, groups, OUs, delegation, Group Policy, Linux users, groups and PAM basics.
+
+**Labs**
+1. Promote DC1 to a new forest. Add DC2 in the branch site with its own AD site and subnet.
+2. Create an OU structure, security groups and 20 users with a PowerShell script.
+3. Write GPOs for password policy, drive mappings and software restrictions. Test with `gpresult`.
+4. Join CL1 and SRV1 to the domain. Delegate password reset rights to a helpdesk group.
+5. Break replication on purpose and repair it with `repadmin` and `dcdiag`.
+6. Linux lane: manage users and groups, configure `sudo` rules, explore PAM files, join LNX1 to the domain with `realmd` and `sssd`.
+
+**Prove it:** the OU and GPO design document, the user creation script, and a recorded repair of the replication failure.
+
+**Certs:** AZ-802 (AD DS is the largest domain, 20-25%), AZ-104 (identity concepts), Linux+ (user management), LPIC-1 (administrative tasks).
+
+## S3. Hybrid identity and governance (3 weeks)
+
+**Outcome:** you can connect on-premises identity to the cloud and control access and cost there.
+
+**Skills:** Microsoft Entra ID, hybrid identity sync, role-based access control, Azure Policy, management groups, resource locks, tagging, Azure Arc, Azure budgets.
+
+**Labs**
+1. Set up an Azure free account with a budget alert before anything else.
+2. Add a custom domain to Entra ID. Add a matching UPN suffix on-premises (a subdomain of a domain you own works).
+3. Sync a subset of users with Entra Connect.
+4. Create groups, assign built-in and custom Azure roles, and test them with a restricted user.
+5. Apply an Azure Policy that requires a tag. Prove it blocks a non-compliant resource.
+6. Onboard SRV1 to Azure Arc.
+
+**Prove it:** an access matrix showing who can do what and why, and screenshots of the policy denying a deployment.
+
+**Certs:** AZ-104 (identity and governance, 20-25%), AZ-802 (hybrid management), Cloud+ (IAM concepts).
+
+## S4. Compute and virtualization (3 weeks)
+
+**Outcome:** you can deploy and manage servers on-premises and in Azure and explain the tradeoffs.
+
+**Skills:** Windows Server VMs, Azure VMs, images, scale and availability concepts, Linux virtualization basics (KVM, libvirt), container fundamentals.
+
+**Labs**
+1. Deploy a Windows Server VM and a Linux VM in Azure. Choose sizes, disks and network settings and justify each one.
+2. Use custom script extensions to configure both VMs after deployment.
+3. Compare an on-premises VMware VM and an Azure VM: backup, resize, move.
+4. Deploy a container to Azure Container Instances or App Service and a second one on LNX1 with Docker or Podman.
+5. Linux lane: install `libvirt` on LNX1 and inspect the VM definition files and virtual networks. Nested virtualization is off in this lab, so treat this as reading and light configuration, not running a second-level VM.
+
+**Prove it:** a decision table for when to use a VM, a container, or an app service, with costs.
+
+**Certs:** AZ-104 (compute, 20-25%), AZ-802 (Windows Server VMs in Azure), Cloud+ (deployment), Linux+ (containers), LPIC-3 305 (foundation).
+
+## S5. Storage and file services (3 weeks)
+
+**Outcome:** you can provide and protect storage for users and workloads on-premises and in Azure.
+
+**Skills:** Windows file shares, permissions, DFS, Storage Spaces, Azure Files and Blob, access tiers, shared access signatures, Linux LVM, RAID, NFS and Samba.
+
+**Labs**
+1. Create file shares on SRV1 with NTFS and share permissions for three groups. Prove least privilege.
+2. Set up DFS Namespaces across both sites and test failover.
+3. Build a Storage Space with a resilient volume on added virtual disks.
+4. Create an Azure storage account, an Azure Files share and a Blob container. Mount the file share on SRV1.
+5. Generate a shared access signature and a stored access policy. Revoke access.
+6. Linux lane: build LVM volumes, extend one live, configure software RAID and an NFS export.
+
+**Prove it:** a permissions matrix and a test log showing users can and cannot reach each share.
+
+**Certs:** AZ-802 (storage and file services, 15-20%), AZ-104 (storage, 15-20%), LPIC-1 (filesystems), LPIC-2 (advanced storage, file sharing), Linux+ (system management).
+
+## S6. Security and hardening (3 weeks)
+
+**Outcome:** you can measure a server against a baseline and fix the gaps.
+
+**Skills:** OS hardening, patching, Windows Defender and firewall, secure AD, least privilege, Linux firewall and SELinux or AppArmor, TLS and certificates, vulnerability scanning.
+
+**Labs**
+1. Apply a security baseline to SRV1 with GPO and document the differences before and after.
+2. Configure Windows Firewall rules through policy and test them.
+3. Deploy an internal certificate authority. Issue a certificate and bind it to a web service.
+4. Review AD for risky settings (stale accounts, weak delegation, legacy protocols) and remediate.
+5. Run a vulnerability scan (OpenVAS or similar) against the lab and rank the findings.
+6. Linux lane: configure `nftables` or `firewalld`, enforce SELinux on LNX2, set SSH key-only login on LNX1.
+
+**Prove it:** a hardening report with before-and-after evidence for at least ten controls.
+
+**Certs:** AZ-802 (secure Windows Server and AD DS), Cloud+ (security), Security+ (security architecture and controls), Linux+ (security, 18%), LPIC-2 (system security), LPIC-3 303 (foundation).
+
+## S7. Monitoring, backup and troubleshooting (3 weeks)
+
+**Outcome:** you can watch systems, restore them, and find faults methodically.
+
+**Skills:** Performance Monitor, Event Viewer, Windows Admin Center, Azure Monitor, Log Analytics, alerts, backup and recovery, disaster recovery basics, a repeatable troubleshooting method, Linux logs and performance tools.
+
+**Labs**
+1. Collect performance counters from SRV1 and set an alert threshold.
+2. Send logs from SRV1 to a Log Analytics workspace. Write two queries.
+3. Back up SRV1 files and a system state. Delete data and restore it.
+4. Configure Azure Backup for an Azure VM and test a restore.
+5. Fault lab: a partner (or a script) breaks something in the lab. You diagnose and fix it using only logs and tools, and write up the timeline.
+6. Linux lane: use `journalctl`, `top`, `iostat`, `ss`, and `systemd` status to diagnose a stuck service and a full disk.
+
+**Prove it:** a monitoring dashboard screenshot, a restore test log, and an incident write-up with root cause.
+
+**Certs:** AZ-802 (monitor and troubleshoot, 15-20%), AZ-104 (monitor and maintain, 10-15%), Linux+ (troubleshooting, 22%), Cloud+ (operations, troubleshooting).
+
+**Gate: AZ-802.** See ASSESSMENT.md for readiness criteria.
+
+## S8. Automation and infrastructure as code (3 weeks)
+
+**Outcome:** you can build repeatable environments from code instead of by hand.
+
+**Skills:** PowerShell scripting and modules, Bash scripting, ARM templates and Bicep, Azure CLI, Ansible basics, Git workflows, secrets handling.
+
+**Labs**
+1. Rewrite the S2 user creation script with parameters, logging and error handling.
+2. Deploy a virtual network, a storage account and a VM from a Bicep file. Redeploy it to prove it is repeatable.
+3. Write the same deployment with the Azure CLI and compare.
+4. Write an Ansible playbook that configures LNX1 and LNX2 identically (users, packages, firewall, SSH).
+5. Put every script into Git with meaningful commits and a README.
+6. Linux lane: write a Bash script with functions, arguments and a cron or systemd timer.
+
+**Prove it:** a repo folder of scripts and templates that a teammate can run cold to rebuild an environment.
+
+**Certs:** AZ-104 (ARM and Bicep), Linux+ (automation, orchestration and scripting, 17%), Cloud+ (DevOps fundamentals), LPIC-1 (shell scripting).
+
+**Gate: AZ-104.**
+
+## S9. Cloud architecture and operations (3 weeks)
+
+**Outcome:** you can pick the right cloud design and explain cost, risk and migration.
+
+**Skills:** cloud service and deployment models, shared responsibility, high availability and disaster recovery design, cost management, migration approaches, multicloud concepts, cloud security and IAM patterns.
+
+**Labs**
+1. Design a three-tier application on paper, then price it in the Azure calculator in two regions.
+2. Compare the same design on a second cloud using its published pricing (no deployment needed).
+3. Write a migration plan for the lab file server to Azure Files with a rollback.
+4. Review a sample architecture and mark single points of failure.
+5. Set up cost alerts and tag-based cost reports in Azure.
+
+**Prove it:** an architecture document with diagram, cost estimate, risks and migration plan.
+
+**Certs:** Cloud+ (architecture 23%, deployment 19%, operations 17%), AZ-104 (reinforcement).
+
+**Gate: Cloud+.** Check the exam's retirement date before booking. CompTIA lists an estimated 2027.
+
+## S10. Linux services and advanced administration (4 weeks)
+
+**Outcome:** you can run the core network services and manage boot, kernel and capacity on Linux.
+
+**Skills:** DNS, web, mail and file-sharing services, boot process and systemd, kernel modules, capacity planning, system maintenance, networking configuration.
+
+**Labs**
+1. Run authoritative DNS with `bind9` for a lab zone and test from Windows.
+2. Host two virtual sites with Apache or Nginx, TLS and a reverse proxy.
+3. Set up a small mail relay with Postfix and test delivery.
+4. Configure Samba to serve a share to a domain user.
+5. Trace the boot process, break the bootloader on a snapshot and recover it.
+6. Build a capacity report from `sar` or similar tools.
+
+**Prove it:** a service catalogue for the lab (what runs, where, how to restore it) and boot recovery notes.
+
+**Certs:** Linux+ (system management, services, troubleshooting), LPIC-1 (all topics reinforced), LPIC-2 (DNS, web, file sharing, email, kernel, startup, capacity planning).
+
+**Gate: Linux+ and LPIC-1.** They overlap heavily, so plan them close together.
+
+## S11. Security operations, governance and risk (3 weeks)
+
+**Outcome:** you can detect and respond to incidents and explain security in business terms.
+
+**Skills:** threats and vulnerabilities, log analysis, incident response, security tools, risk assessment, policy and compliance, data protection, security awareness.
+
+**Labs**
+1. Centralize logs from the lab into one place and write three detection rules.
+2. Run a tabletop incident exercise from a written scenario. Document the timeline and lessons learned.
+3. Write a risk register for the lab with likelihood, impact and controls.
+4. Draft an acceptable use policy and a backup policy and map each to controls in the lab.
+5. Simulate a phishing report and walk the response steps.
+
+**Prove it:** the risk register, an incident report and three tested detection rules.
+
+**Certs:** Security+ (security operations, threats and vulnerabilities, governance, risk and compliance). The V8 objectives add more AI risk, so review them when published.
+
+**Gate: Security+.**
+
+## S12. Containers, virtualization and high availability (4 weeks)
+
+**Outcome:** you can run and secure containers and design for availability.
+
+**Skills:** container images and runtimes, orchestration basics, virtualization platforms, clustering, load balancing, shared storage, failover, hardening containers.
+
+**Labs**
+1. Build a container image, publish to a private registry and run it with limits.
+2. Run a three-container app with Compose or Podman pods.
+3. Build a two-node web cluster with a shared IP and test failover.
+4. Set up a load balancer in front of two web servers and pull one node offline.
+5. Scan an image for vulnerabilities and fix the findings.
+
+**Prove it:** a documented failover test with timings and a container hardening checklist.
+
+**Certs:** LPIC-3 305 or 306 (choose a track now), Cloud+ (deployment, DevOps), Linux+ (containers).
+
+**Gate: LPIC-2** happens here. LPIC-2 needs an active LPIC-1.
+
+## S13. Capstone (3 weeks)
+
+**Outcome:** one integrated environment that proves the whole skill set.
+
+**Build:** a small company environment with two sites, a domain, hybrid identity, file services, a Linux service tier, monitoring, backup, hardening, and an automated rebuild.
+
+**Requirements**
+1. Everything defined in code where possible, stored in Git.
+2. A documented architecture, runbook and recovery test.
+3. A security review with findings fixed.
+4. A 20-minute walkthrough to teammates.
+
+**Prove it:** the walkthrough, judged against the rubric in ASSESSMENT.md.
+
+**Gate: LPIC-3, one track.**

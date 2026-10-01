@@ -1,0 +1,65 @@
+# Lab environment
+
+Host: Core 7 150U, 32GB RAM, 1TB NVMe, VMware Workstation. Nested Hyper-V is out of scope, so any lab that needs a hypervisor inside a VM is done as reading and light configuration only.
+
+## Networks
+
+| VMware network | Type | Subnet | Purpose |
+| --- | --- | --- | --- |
+| VMnet10 | Host-only | 10.10.10.0/24 | "Corp" site |
+| VMnet11 | Host-only | 10.10.20.0/24 | "Branch" site |
+| VMnet8 | NAT | (VMware default) | Internet access, used only by RTR1 |
+
+Turn off the VMware DHCP service on VMnet10 and VMnet11. DHCP is something you build in S1.
+
+## Virtual machines
+
+| VM | OS | RAM | Network | Address | Role |
+| --- | --- | --- | --- | --- | --- |
+| RTR1 | Debian | 1GB | VMnet10, VMnet11, VMnet8 | .1 on each lab network | Router, NAT, firewall practice |
+| DC1 | Windows Server | 2GB | VMnet10 | 10.10.10.10 | Domain controller, corp site |
+| DC2 | Windows Server | 2GB | VMnet11 | 10.10.20.10 | Domain controller, branch site |
+| SRV1 | Windows Server | 3GB | VMnet10 | 10.10.10.20 | File, DNS, DHCP, Windows Admin Center |
+| CL1 | Windows 11 | 4GB | VMnet10 | DHCP | Client |
+| LNX1 | Debian or Ubuntu | 2GB | VMnet10 | 10.10.10.30 | Linux service host |
+| LNX2 | Rocky or AlmaLinux | 2GB | VMnet10 | 10.10.10.31 | RHEL-family practice |
+
+All VMs on at once is about 16GB, which leaves headroom on a 32GB host. In practice, run only what the current sprint needs and suspend the rest.
+
+Use evaluation editions of Windows Server and Windows 11 from the Microsoft Evaluation Center. Check their current time limits, and use snapshots so an expired evaluation is a rebuild, not a disaster.
+
+## Naming
+
+- Domain name for the lab: use a name that is not your real production domain, for example `corp.test`. `.test` is reserved for testing and will never resolve on the internet.
+- For S3 (hybrid identity) add a UPN suffix on a domain you own, because Entra sync needs a routable, verified domain.
+- VM names are as in the table. Keep them short and lowercase in scripts.
+
+## Snapshots
+
+Take a snapshot at each of these points and name it clearly:
+
+1. `clean-install` after the OS is installed and updated.
+2. `pre-<sprint>` before each sprint's first lab.
+3. `post-<sprint>` when the "prove it" deliverable is done.
+
+Delete old snapshots regularly. A long snapshot chain slows the disk and eats space.
+
+## Azure sandbox rules
+
+1. Use a free account. Set a budget alert before creating anything.
+2. Put every lab in its own resource group named `rg-<sprint>-<name>`.
+3. Tag everything with `owner` and `sprint`.
+4. Delete the resource group when the lab is finished. Don't leave VMs running overnight.
+5. Never put real credentials, personal data or production settings in the lab.
+6. Do not link the lab tenant to your employer's or any production tenant.
+
+## Backups of the lab itself
+
+- Copy your VM folders or export the key VMs (DC1, SRV1, LNX1) to an external drive after major milestones.
+- Keep scripts and documents in your own Git repo. Never commit passwords, keys or tokens.
+
+## Ground rules for the team
+
+- Each person builds their own lab. Sharing one lab hides the mistakes that teach the most.
+- Use throwaway passwords in the lab and never reuse them anywhere else.
+- Write down every fix you make. Those notes become the runbooks.
