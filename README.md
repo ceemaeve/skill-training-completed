@@ -2,7 +2,7 @@
 
 A skills-first study path covering Windows Server, Azure, Linux, cloud and security. It is built around a VMware Workstation home lab. Certifications are optional gates along the way, not the structure. Written for a small team, and usable on your own.
 
-Site and calendar: https://skilltrainingcompleted.dev
+Site and calendar: https://skills.ceema.dev, part of [ceema.dev](https://ceema.dev)
 
 This is a download kit. Nothing in this repo is deployed to the website; the site is maintained separately.
 
