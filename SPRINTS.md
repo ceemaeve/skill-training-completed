@@ -53,7 +53,7 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 | S12 | Containers, virtualization, HA | 4 | 47 |
 | **Gate** | **LPIC-2** (2 review weeks) | 2 | 49 |
 | S13 | Capstone | 3 | 52 |
-| **Gate** | **LPIC-3, one track** (2 review weeks) | 2 | 54 |
+| **Gate** | **LPIC-3, one specialty** (2 review weeks) | 2 | 54 |
 
 The core path is 54 weeks, about 12.5 months at 8 hours per week. Track E adds the 14 Foundations weeks in front, for 68 weeks (about 15.7 months). The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
 
@@ -386,7 +386,7 @@ Three sprints for people new to IT. They cover the hardware, operating system, s
 
 **Prove it:** the walkthrough, judged against the rubric in ASSESSMENT.md.
 
-**Gate: LPIC-3, one track.**
+**Gate: LPIC-3, one specialty.**
 
 ---
 
