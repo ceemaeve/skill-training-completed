@@ -77,6 +77,14 @@ Delete old snapshots regularly. A long snapshot chain slows the disk and eats sp
 5. Delete what you build when the lab is finished. NAT gateways, load balancers and RDS bill by the hour.
 6. Never put real credentials, personal data or production settings in the lab, and do not link the account to your employer's AWS organization.
 
+## Claude rules (C1 to C3)
+
+1. Use your own Claude account. Never sign in with an employer's account for lab work.
+2. Never paste a password, key, token, or real company or personal data into a chat or a CLAUDE.md. Use placeholders.
+3. Run Claude Code only inside your lab repo, on the lab host or a lab VM, and take a snapshot before it runs anything new.
+4. Read every change and command before you approve it. You own what it does.
+5. Check answers against the official docs before they go in a deliverable, and say where Claude helped.
+
 ## Backups of the lab itself
 
 - Copy your VM folders or export the key VMs (DC1, SRV1, LNX1) to an external drive after major milestones.

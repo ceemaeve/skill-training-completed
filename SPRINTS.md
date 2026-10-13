@@ -1,6 +1,6 @@
 # Sprint plan
 
-Nineteen sprints: three Foundations sprints (F1 to F3) for people new to IT, the fourteen core sprints (S0 through S13), one Cisco networking sprint (N1) for Track G, and one AWS sprint (A1) for Track H. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
+Twenty-two sprints: three Claude sprints (C1 to C3), three Foundations sprints (F1 to F3) for people new to IT, the fourteen core sprints (S0 through S13), one Cisco networking sprint (N1) for Track G, and one AWS sprint (A1) for Track H. Every track starts with C1, Claude basics; C2 and C3 are Track I. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
 
 **Pacing assumption:** about 8 hours per week (3 reading or video, 4 hands-on lab, 1 review). Change the pace and the calendar moves, but not the order. Week counts below are planning estimates.
 
@@ -12,64 +12,77 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 
 | Sprint | Skill area | Weeks | Running total |
 | --- | --- | --- | --- |
-| F1 | Hardware, devices and troubleshooting | 3 | 3 |
-| F2 | Networking fundamentals | 4 | 7 |
-| **Gate** | **A+ Core 1** (1 review week) | 1 | 8 |
-| F3 | Operating systems, security and support | 3 | 11 |
-| **Gate** | **A+ Core 2** (1 review week) | 1 | 12 |
-| **Gate** | **Network+** (2 review weeks) | 2 | 14 |
+| C1 | Claude basics | 2 | 2 |
+| F1 | Hardware, devices and troubleshooting | 3 | 5 |
+| F2 | Networking fundamentals | 4 | 9 |
+| **Gate** | **A+ Core 1** (1 review week) | 1 | 10 |
+| F3 | Operating systems, security and support | 3 | 13 |
+| **Gate** | **A+ Core 2** (1 review week) | 1 | 14 |
+| **Gate** | **Network+** (2 review weeks) | 2 | 16 |
 
 **Networking (Track G)**
 
 | Step | Skill area | Weeks | Running total |
 | --- | --- | --- | --- |
-| F2 | Networking fundamentals | 4 | 4 |
-| S0 | Lab and foundations | 2 | 6 |
-| S1 | Networking and name resolution | 3 | 9 |
-| N1 | Cisco routing and switching | 4 | 13 |
-| **Gate** | **CCNA** (2 review weeks) | 2 | 15 |
+| C1 | Claude basics | 2 | 2 |
+| F2 | Networking fundamentals | 4 | 6 |
+| S0 | Lab and foundations | 2 | 8 |
+| S1 | Networking and name resolution | 3 | 11 |
+| N1 | Cisco routing and switching | 4 | 15 |
+| **Gate** | **CCNA** (2 review weeks) | 2 | 17 |
 
 **AWS (Track H)**
 
 | Step | Skill area | Weeks | Running total |
 | --- | --- | --- | --- |
-| S0 | Lab and foundations | 2 | 2 |
-| S1 | Networking and name resolution | 3 | 5 |
-| S9 | Cloud architecture and operations | 3 | 8 |
-| A1 | AWS core services | 4 | 12 |
-| **Gate** | **AWS Solutions Architect – Associate** (2 review weeks) | 2 | 14 |
+| C1 | Claude basics | 2 | 2 |
+| S0 | Lab and foundations | 2 | 4 |
+| S1 | Networking and name resolution | 3 | 7 |
+| S9 | Cloud architecture and operations | 3 | 10 |
+| A1 | AWS core services | 4 | 14 |
+| **Gate** | **AWS Solutions Architect – Associate** (2 review weeks) | 2 | 16 |
 
-**Core path (S0 to S13)**
+**Claude (Track I)**
+
+| Step | Skill area | Weeks | Running total |
+| --- | --- | --- | --- |
+| C1 | Claude basics | 2 | 2 |
+| S0 | Lab and foundations | 2 | 4 |
+| C2 | Claude for IT work | 2 | 6 |
+| C3 | Skills and agents | 2 | 8 |
+
+**Core path (C1, then S0 to S13)**
 
 | Sprint | Skill area | Weeks | Running total |
 | --- | --- | --- | --- |
-| S0 | Lab and foundations | 2 | 2 |
-| S1 | Networking and name resolution | 3 | 5 |
-| S2 | Identity and directory services | 4 | 9 |
-| S3 | Hybrid identity and governance | 3 | 12 |
-| S4 | Compute and virtualization | 3 | 15 |
-| S5 | Storage and file services | 3 | 18 |
-| S6 | Security and hardening | 3 | 21 |
-| S7 | Monitoring, backup, troubleshooting | 3 | 24 |
-| **Gate** | **AZ-802** (1 review week) | 1 | 25 |
-| S8 | Automation and infrastructure as code | 3 | 28 |
-| **Gate** | **AZ-104** (1 review week) | 1 | 29 |
-| S9 | Cloud architecture and operations | 3 | 32 |
-| **Gate** | **Cloud+ exam** (1 review week) | 1 | 33 |
-| S10 | Linux services and advanced admin | 4 | 37 |
-| **Gate** | **Linux+ and LPIC-1** (2 review weeks) | 2 | 39 |
-| S11 | Security operations, governance, risk | 3 | 42 |
-| **Gate** | **Security+** (1 review week) | 1 | 43 |
-| S12 | Containers, virtualization, HA | 4 | 47 |
-| **Gate** | **LPIC-2** (2 review weeks) | 2 | 49 |
-| S13 | Capstone | 3 | 52 |
-| **Gate** | **LPIC-3, one specialty** (2 review weeks) | 2 | 54 |
+| C1 | Claude basics | 2 | 2 |
+| S0 | Lab and foundations | 2 | 4 |
+| S1 | Networking and name resolution | 3 | 7 |
+| S2 | Identity and directory services | 4 | 11 |
+| S3 | Hybrid identity and governance | 3 | 14 |
+| S4 | Compute and virtualization | 3 | 17 |
+| S5 | Storage and file services | 3 | 20 |
+| S6 | Security and hardening | 3 | 23 |
+| S7 | Monitoring, backup, troubleshooting | 3 | 26 |
+| **Gate** | **AZ-802** (1 review week) | 1 | 27 |
+| S8 | Automation and infrastructure as code | 3 | 30 |
+| **Gate** | **AZ-104** (1 review week) | 1 | 31 |
+| S9 | Cloud architecture and operations | 3 | 34 |
+| **Gate** | **Cloud+ exam** (1 review week) | 1 | 35 |
+| S10 | Linux services and advanced admin | 4 | 39 |
+| **Gate** | **Linux+ and LPIC-1** (2 review weeks) | 2 | 41 |
+| S11 | Security operations, governance, risk | 3 | 44 |
+| **Gate** | **Security+** (1 review week) | 1 | 45 |
+| S12 | Containers, virtualization, HA | 4 | 49 |
+| **Gate** | **LPIC-2** (2 review weeks) | 2 | 51 |
+| S13 | Capstone | 3 | 54 |
+| **Gate** | **LPIC-3, one specialty** (2 review weeks) | 2 | 56 |
 
-The core path is 54 weeks, about 12.5 months at 8 hours per week. Track E adds the 14 Foundations weeks in front, for 68 weeks (about 15.7 months). The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
+The core path is 56 weeks with C1, about 12.9 months at 8 hours per week. Track E adds the 14 Foundations weeks after C1, for 70 weeks (about 16.2 months). The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
 
-**First exam timing:** counted from S0, AZ-802 lands at week 25 (about 5.8 months) at 8 hours per week. At 12 hours per week it lands around week 17 (about 4 months). On Track F and E the first exam is A+ Core 1, at week 8.
+**First exam timing:** counted from the start of the track (C1), AZ-802 lands at week 27 (about 6.2 months) at 8 hours per week. At 12 hours per week it lands around week 18 (about 4.2 months). On Track F the first exam is A+ Core 1, at week 10.
 
-**Security+ timing:** V8 (SY0-801) launches on November 17, 2026, and V7 retires on June 11, 2027. Security+ comes at week 43 of the core sprints, so anyone starting after mid-2026 reaches it after V8 launches. Study the V8 objectives.
+**Security+ timing:** V8 (SY0-801) launches on November 17, 2026, and V7 retires on June 11, 2027. Security+ comes at week 45 of the core path, so anyone starting after mid-2026 reaches it after V8 launches. Study the V8 objectives.
 
 ---
 
@@ -457,3 +470,77 @@ One AWS sprint for people heading into cloud jobs on AWS. It builds on S1 (netwo
 **Certs:** AWS Solutions Architect – Associate SAA-C03 (secure architectures 30%, resilient architectures 26%, high-performing architectures 24%, cost-optimized architectures 20%).
 
 **Gate: AWS Solutions Architect – Associate (SAA-C03)** happens here, with two review weeks. Check AWS's exam page for a new version before you book.
+
+---
+
+## Claude (C1 in every track; C2 and C3 for Track I)
+
+Claude is an AI assistant made by Anthropic. These sprints teach it the way the rest of the kit teaches everything: hands on, and checked. C1 opens every track, so you can use Claude as a study partner from then on. C2 and C3 go further, into Claude Code and Skills, for Track I. Anyone on another track can add them after S0 (4 weeks).
+
+**Rules for every Claude lab:** never paste a password, key, token, or real company or personal data into a chat. Treat every answer as a draft and check it against the official docs or your lab. Say where Claude helped in your deliverables.
+
+**Plans:** C1 and C3 work on the free Claude plan (Projects, up to five; Skills need code execution turned on in Claude's settings). C2 uses Claude Code, which needs a paid Claude plan or an Anthropic Console account. Check Claude's current pricing before you start C2.
+
+**Courses:** all from Claude Academy (https://academy.claude.com): [Claude 101](https://academy.claude.com/courses/claude-101), [AI Fluency: Framework and foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations), [AI capabilities and limitations](https://academy.claude.com/courses/ai-capabilities-and-limitations), [Claude Code 101](https://academy.claude.com/courses/claude-code-101), [Claude Code in action](https://academy.claude.com/courses/claude-code-in-action), [Introduction to agent skills](https://academy.claude.com/courses/introduction-to-agent-skills), [Introduction to subagents](https://academy.claude.com/courses/introduction-to-subagents) and [Introduction to Model Context Protocol](https://academy.claude.com/courses/introduction-to-model-context-protocol).
+
+## C1. Claude basics (2 weeks)
+
+**Outcome:** you can use Claude to study and plan IT work, and you check what it tells you.
+
+**Skills:** clear prompts (goal, context, format), Projects with your own files and instructions, follow-up questions, what AI can and can't do, spotting wrong or made-up answers, removing names, addresses and secrets before you ask.
+
+**Courses:** Claude 101, AI Fluency: Framework and foundations, AI capabilities and limitations.
+
+**Labs**
+1. Set up: create a Claude Project called "Home lab". In its instructions, give your track, your hours per week and the rule to check every answer. Add this kit's SPRINTS.md and LAB-ENVIRONMENT.md as project files.
+2. Study partner: ask Claude to explain one topic from your next sprint three ways (plain words, an example, numbered steps). Then write it in your own words in your notes.
+3. Check the answer: ask for a setting you can look up, for example how to set a static IP address on Windows 11. Find the official docs page and mark what matched, what was out of date and what was wrong.
+4. Find the edge: ask about something very recent, very narrow, or made up (an exam code that doesn't exist). Write down how Claude answered and how you could tell.
+5. Safe use: take a sample config or log, replace every name, address and secret with placeholders, then ask Claude to explain it. Keep the list of what you removed.
+6. Plan: ask Claude to turn your track's sprint list into a weekly plan for your hours. Compare it with the calendar on skills.ceema.dev and fix the differences.
+
+**Prove it:** your Project instructions, a one-page check log from labs 3 and 4 (claim, source, verdict) and the list of what you removed in lab 5.
+
+**Certs:** none. Claude Academy courses give completion certificates, not exams.
+
+## C2. Claude for IT work (2 weeks)
+
+**Outcome:** you can use Claude Code to write and fix lab scripts, and you review every change before you keep it.
+
+**Before you start:** S0 (command line on Windows and Linux, and Git) and a paid Claude plan or Anthropic Console account.
+
+**Skills:** installing Claude Code, starting it in a project folder, CLAUDE.md project instructions, asking for a plan before any change, reading diffs, approving or refusing commands, Git commits as checkpoints, testing what it wrote, keeping secrets out of the repo.
+
+**Courses:** Claude Code 101, Claude Code in action.
+
+**Labs**
+1. Install Claude Code on the lab host or the Linux VM, and start it in a new Git repo for your lab scripts.
+2. Write a CLAUDE.md for the repo: what the lab is, the VM names from LAB-ENVIRONMENT.md, "lab only, never production", and how to test a script.
+3. Ask for a PowerShell script that reports free disk space and stopped services on the lab servers. Ask for the plan first and read it, then let it write. Run the script after a snapshot. Commit.
+4. Do the same in Bash for the Linux VM. Break one thing on purpose and ask Claude Code to find the fault from the error message.
+5. Say no: when Claude Code proposes something you don't understand or wouldn't run yourself (a recursive delete, a change outside the repo), refuse it and ask for a safer way. Write down what happened.
+6. Review log: for every change Claude Code made, note what you checked and what you fixed by hand.
+
+**Prove it:** the scripts repo with its CLAUDE.md, the commit history, test output and the review log. A partner runs your scripts in their own lab from the README alone.
+
+**Certs:** none.
+
+## C3. Skills and agents (2 weeks)
+
+**Outcome:** you can package a lab chore as a Claude Skill someone else can use, and explain where subagents and MCP fit.
+
+**Skills:** what a Skill is (a folder with a SKILL.md: a name, a description of when to use it, and steps), writing a description that makes Claude pick the Skill at the right time, checkable steps, adding a template or script, testing in fresh chats, sharing; subagents for splitting big tasks; MCP as the way Claude connects to other tools and data.
+
+**Courses:** Introduction to agent skills, Introduction to subagents, Introduction to Model Context Protocol (the first lessons are enough unless you write Python).
+
+**Labs**
+1. Pick a chore you repeat in the lab, for example the snapshot checklist in LAB-ENVIRONMENT.md or the write-up for a sprint's "prove it".
+2. Write the Skill: a SKILL.md with a name, a description and numbered steps, plus any template file it needs. Upload it in Claude (Customize, then Skills, with code execution on), or add it to your C2 repo for Claude Code.
+3. Test it: in a fresh chat, ask for the chore without naming the Skill. Does Claude use it? Fix the description until it does, and check that it stays out of unrelated requests.
+4. Hand it over: a partner installs your Skill and uses it from its instructions alone. Fix whatever confused them.
+5. Subagents (Claude Code; skip on the free plan): ask Claude Code to review three of your C2 scripts in parallel with subagents, then compare their findings with your own review.
+6. MCP: read how Claude connects to a tool you already use (GitHub or a file system, for example). List the data it could reach, and decide what you would and wouldn't connect at work.
+
+**Prove it:** the Skill folder in your repo, a test log (requests that should and shouldn't use it) and your partner's notes from lab 4.
+
+**Certs:** none.
