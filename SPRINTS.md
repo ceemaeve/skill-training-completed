@@ -1,6 +1,6 @@
 # Sprint plan
 
-Seventeen sprints: three Foundations sprints (F1 to F3) for people new to IT, then the fourteen core sprints, S0 through S13. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
+Eighteen sprints: three Foundations sprints (F1 to F3) for people new to IT, the fourteen core sprints (S0 through S13), and one Cisco networking sprint (N1) for Track G. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
 
 **Pacing assumption:** about 8 hours per week (3 reading or video, 4 hands-on lab, 1 review). Change the pace and the calendar moves, but not the order. Week counts below are planning estimates.
 
@@ -18,6 +18,16 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 | F3 | Operating systems, security and support | 3 | 11 |
 | **Gate** | **A+ Core 2** (1 review week) | 1 | 12 |
 | **Gate** | **Network+** (2 review weeks) | 2 | 14 |
+
+**Networking (Track G)**
+
+| Step | Skill area | Weeks | Running total |
+| --- | --- | --- | --- |
+| F2 | Networking fundamentals | 4 | 4 |
+| S0 | Lab and foundations | 2 | 6 |
+| S1 | Networking and name resolution | 3 | 9 |
+| N1 | Cisco routing and switching | 4 | 13 |
+| **Gate** | **CCNA** (2 review weeks) | 2 | 15 |
 
 **Core path (S0 to S13)**
 
@@ -377,3 +387,34 @@ Three sprints for people new to IT. They cover the hardware, operating system, s
 **Prove it:** the walkthrough, judged against the rubric in ASSESSMENT.md.
 
 **Gate: LPIC-3, one track.**
+
+---
+
+## Networking (Track G)
+
+One Cisco sprint for people heading into network administration or a network operations center. It builds on F2 and S1 and leads to the CCNA.
+
+**CCNA version:** this sprint follows CCNA v2.0, the only version from February 3, 2027. The exam code stays 200-301. Version 2.0 puts more weight on troubleshooting and adds AI in network operations. Check Cisco's v2.0 exam topics before you start. If your CCNA gate lands before February 3, 2027, either book v1.1 by February 2 or keep studying v2.0 and book after the switch. Don't split the difference.
+
+**Cisco lab:** Cisco Packet Tracer (from F2) covers most labs. Cisco Modeling Labs Free (up to five nodes) runs real IOS images for the labs Packet Tracer can't do.
+
+## N1. Cisco routing and switching (4 weeks)
+
+**Outcome:** you can build, secure and troubleshoot a small Cisco campus network, and use automation and AI tools without trusting them blindly.
+
+**Skills:** Cisco IOS configuration and show commands, VLANs and 802.1Q trunks, Rapid PVST+, EtherChannel, inter-VLAN routing, static routes, OSPFv2 and OSPFv3, HSRP, NAT and PAT, DHCP, NTP, syslog and SNMP on IOS, SSH and SCP, ACLs, port security, DHCP snooping, dynamic ARP inspection, storm control, wireless LAN controllers, REST APIs and JSON, AI-assisted network operations.
+
+**Labs**
+1. Campus switching: two switches with VLANs, a trunk, LACP EtherChannel and inter-VLAN routing on a layer-3 switch. Set the root bridge with Rapid PVST+, and add PortFast and BPDU guard on access ports.
+2. Routing: three routers in single-area OSPFv2, then add IPv6 and OSPFv3. Add a floating static route as a backup path and test it.
+3. Redundancy: run HSRP between two routers, shut one down and watch the failover.
+4. Services: DHCP, NAT and PAT, NTP and syslog on IOS. Allow SSH only, with local users, and back up a config with SCP.
+5. Security: standard and extended ACLs, port security, DHCP snooping, dynamic ARP inspection and storm control. Set up a WPA3 wireless network on a controller in Packet Tracer.
+6. Automation and AI: in Cisco Modeling Labs Free, read a device's configuration as JSON through RESTCONF. Ask an AI assistant to draft the fix for one fault. Check every line against the device before you apply it, and note what it got wrong.
+7. Fault practice: a partner breaks four things (native VLAN mismatch, OSPF area mismatch, ACL in the wrong order, HSRP priority). Find each one with show commands.
+
+**Prove it:** the lab file with a diagram and addressing table, the device configs in Git, and a troubleshooting log for the four faults.
+
+**Certs:** CCNA v2.0 (infrastructure and connectivity 25%, switching and network access 25%, IP routing 20%, network services and security 20%, AI and network operations 10%).
+
+**Gate: CCNA (200-301)** happens here, with two review weeks.

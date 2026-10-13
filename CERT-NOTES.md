@@ -16,6 +16,7 @@ Last checked: 2026-09-29. Exam versions and retirement dates change, so re-check
 | Cert | Exam(s) | Format | Notes |
 | --- | --- | --- | --- |
 | CompTIA A+ (Foundations) | 220-1201 (Core 1), 220-1202 (Core 2) | 90 min, max 90 questions each; pass 675 (Core 1), 700 (Core 2) | V15, launched Mar 2025, estimated 2028 retirement. Both exams needed, in any order. Added 2026-10-13 |
+| Cisco CCNA (Networking) | 200-301 | 120 min, $300 | v1.1 until Feb 2, 2027; v2.0 from Feb 3, 2027 (same code). No prerequisites. Valid 3 years. Added 2026-10-13 |
 | CompTIA Network+ (Foundations) | N10-009 | 90 min, max 90 questions, pass 720 | V9, launched Jun 20, 2024, estimated 2027 retirement. Added 2026-10-13 |
 | Microsoft AZ-802, Administering Windows Server | AZ-802 | Pass mark 700 | AD DS 20-25%, storage 15-20%, monitor/troubleshoot 15-20%, hybrid mgmt, VMs, networking, security 10-15% each |
 | Microsoft AZ-104, Azure Administrator | AZ-104 | Pass mark 700 | Identity/governance 20-25%, compute 20-25%, storage 15-20%, networking 15-20%, monitor/backup 10-15% |
@@ -79,6 +80,7 @@ Run only what the current study block needs. Suspend the rest and take snapshots
 
 - [CompTIA A+](https://www.comptia.org/en-us/certifications/a/)
 - [CompTIA Network+](https://www.comptia.org/en-us/certifications/network/)
+- [Cisco CCNA](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html) and [CCNA v2.0 exam topics](https://learningnetwork.cisco.com/s/ccna-v2-exam-topics)
 - [AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802)
 - [AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 - [CompTIA Security+](https://www.comptia.org/en-us/certifications/security/)

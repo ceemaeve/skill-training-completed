@@ -11,6 +11,15 @@ For people new to IT, or moving into IT from another kind of work.
 - About 14 weeks at 8 hours per week.
 - Then pick B, C or D, or carry on with S0 as Track E does.
 
+## Track G: Networking (CCNA)
+
+For network administration, network operations center (NOC) and network support roles.
+
+- Do F2, S0, S1 and N1 (see SPRINTS.md). S0 builds the lab that S1 needs.
+- Sit CCNA after N1. Network+ after F2 is optional.
+- About 15 weeks at 8 hours per week.
+- New to IT? Do Track F first, then go straight to S0.
+
 ## Track A: Skills only (no exams)
 
 For people who want the capability without the certificate.
@@ -41,7 +50,7 @@ For people who want the capability without the certificate.
 
 ## Track E: Everyone (the full path)
 
-- All seventeen sprints, F1 to F3 then S0 to S13, and all gates, A+ and Network+ included. About 68 weeks at 8 hours per week.
+- All seventeen sprints, F1 to F3 then S0 to S13, and all their gates, A+ and Network+ included. About 68 weeks at 8 hours per week. CCNA is not in Track E; add N1 and its gate (6 weeks) if you want it.
 - Already past the basics? Start at S0 and skip the Foundations block (54 weeks).
 
 ## Choosing
@@ -49,6 +58,7 @@ For people who want the capability without the certificate.
 | If your role is mostly... | Start with track |
 | --- | --- |
 | New to IT, or help desk and desktop support | F, then B, C or D |
+| Network administration or a NOC | G (Track F first if new to IT) |
 | Windows and Microsoft 365 administration | B |
 | Linux server administration | C |
 | Cloud engineering | B, then S9 and Cloud+ |

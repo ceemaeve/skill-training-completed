@@ -38,6 +38,11 @@ Track F needs less than the full lab:
 - Cisco Packet Tracer and Wireshark, both free.
 - Your home router, read-only: look, screenshot, change nothing you can't put back.
 
+## Cisco lab (Track G)
+
+- Cisco Packet Tracer, free with a Cisco Networking Academy account. It covers most N1 labs.
+- Cisco Modeling Labs Free, up to five nodes with real IOS images, for RESTCONF and anything Packet Tracer can't do. It runs as a VM on the lab host. Check Cisco's CML Free install guide for the memory it needs, and suspend the Windows VMs while it runs.
+
 ## Naming
 
 - Domain name for the lab: use a name that is not your real production domain, for example `corp.test`. `.test` is reserved for testing and will never resolve on the internet.
