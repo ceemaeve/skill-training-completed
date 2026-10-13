@@ -28,6 +28,16 @@ All VMs on at once is about 16GB, which leaves headroom on a 32GB host. In pract
 
 Use evaluation editions of Windows Server and Windows 11 from the Microsoft Evaluation Center. Check their current time limits, and use snapshots so an expired evaluation is a rebuild, not a disaster.
 
+## Foundations lab (Track F)
+
+Track F needs less than the full lab:
+
+- An old PC or laptop you can take apart. A used office desktop is fine.
+- VMware Workstation on the lab host, with one Windows 11 VM on the NAT network. It becomes CL1 when you build the full lab in S0.
+- An Ubuntu desktop VM for F3 (2GB).
+- Cisco Packet Tracer and Wireshark, both free.
+- Your home router, read-only: look, screenshot, change nothing you can't put back.
+
 ## Naming
 
 - Domain name for the lab: use a name that is not your real production domain, for example `corp.test`. `.test` is reserved for testing and will never resolve on the internet.

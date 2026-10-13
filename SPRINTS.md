@@ -1,12 +1,25 @@
 # Sprint plan
 
-Fourteen sprints, S0 through S13. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
+Seventeen sprints: three Foundations sprints (F1 to F3) for people new to IT, then the fourteen core sprints, S0 through S13. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
 
 **Pacing assumption:** about 8 hours per week (3 reading or video, 4 hands-on lab, 1 review). Change the pace and the calendar moves, but not the order. Week counts below are planning estimates.
 
 **Windows-first ordering:** S1 to S8 lean Windows and Azure so the AZ-802 gate lands first (your target is within 3 to 6 months). Each of those sprints has a short **Linux lane** to build the Linux skills in parallel.
 
 Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md).
+
+**Foundations (Tracks F and E)**
+
+| Sprint | Skill area | Weeks | Running total |
+| --- | --- | --- | --- |
+| F1 | Hardware, devices and troubleshooting | 3 | 3 |
+| F2 | Networking fundamentals | 4 | 7 |
+| **Gate** | **A+ Core 1** (1 review week) | 1 | 8 |
+| F3 | Operating systems, security and support | 3 | 11 |
+| **Gate** | **A+ Core 2** (1 review week) | 1 | 12 |
+| **Gate** | **Network+** (2 review weeks) | 2 | 14 |
+
+**Core path (S0 to S13)**
 
 | Sprint | Skill area | Weeks | Running total |
 | --- | --- | --- | --- |
@@ -32,11 +45,81 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 | S13 | Capstone | 3 | 52 |
 | **Gate** | **LPIC-3, one track** (2 review weeks) | 2 | 54 |
 
-That's 54 weeks, about 12.5 months at 8 hours per week. The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
+The core path is 54 weeks, about 12.5 months at 8 hours per week. Track E adds the 14 Foundations weeks in front, for 68 weeks (about 15.7 months). The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
 
-**First exam timing:** AZ-802 lands at week 25 (about 5.8 months) at 8 hours per week, the top of a 3 to 6 month target. At 12 hours per week it lands around week 17 (about 4 months).
+**First exam timing:** counted from S0, AZ-802 lands at week 25 (about 5.8 months) at 8 hours per week, the top of a 3 to 6 month target. At 12 hours per week it lands around week 17 (about 4 months). On Track F and E the first exam is A+ Core 1, at week 8.
 
 **Security+ timing:** V8 is expected around Nov 17, 2026. This plan reaches Security+ well after that, so study V8 objectives. Check comptia.org for the final exam code and objectives.
+
+---
+
+## Foundations (Track F, and the start of Track E)
+
+Three sprints for people new to IT. They cover the hardware, operating system, support and networking basics that S0 to S13 assume, and lead to CompTIA A+ (two exams) and Network+. If you already work in IT support, or you can pass a Network+ practice exam, skip to S0.
+
+**Why this order:** A+ Core 1 is about a quarter networking, so the networking sprint (F2) comes before the Core 1 exam. Network+ goes last, after F3 adds the security basics it also tests.
+
+**Foundations lab:** the lab host from LAB-ENVIRONMENT.md, an old PC or laptop you can open up (a used office desktop is fine), a USB stick for installers, and your home router. Cisco Packet Tracer and Wireshark are free. F1 installs VMware Workstation and one Windows 11 VM, which becomes CL1 in S0.
+
+## F1. Hardware, devices and troubleshooting (3 weeks)
+
+**Outcome:** you can identify, install and troubleshoot PC, laptop, mobile and printer hardware, and you work every problem with the same troubleshooting method.
+
+**Skills:** the CompTIA troubleshooting method, motherboards, CPUs, RAM, storage, power supplies, BIOS/UEFI and the boot process, display and peripheral connectors, laptops and mobile devices, printers, virtualization and cloud concepts.
+
+**Labs**
+1. Take apart the spare PC, identify every component, put it back together and boot it. Record each part's specs and connector types.
+2. In UEFI, change the boot order, turn virtualization support (VT-x or AMD-V) and Secure Boot on and off, and set then clear a firmware password.
+3. Add or swap RAM or a drive, then confirm the change in the operating system and in Disk Management.
+4. Install VMware Workstation on the lab host and a Windows 11 VM. Snapshot it as `clean-install`.
+5. Pair a phone with a laptop over Bluetooth, share the phone's hotspot, and add an email account to the phone. Note what each setting does.
+6. Fault practice: a partner breaks one thing on the spare PC (pulls a RAM stick, unplugs a drive, changes the boot order). Find it using the six steps of the method.
+
+**Prove it:** a hardware inventory of the spare PC, plus three troubleshooting tickets (symptom, theory, test, fix, check, notes) written in the order of the CompTIA method.
+
+**Certs:** A+ Core 1 (hardware 25%, hardware and network troubleshooting 28%, mobile devices 13%, virtualization and cloud computing 11%).
+
+## F2. Networking fundamentals (4 weeks)
+
+**Outcome:** you can explain how data moves across a network, build a small switched and routed network, and troubleshoot it from the cable up to the application.
+
+**Skills:** OSI and TCP/IP models, cabling and connectors, Ethernet switching and VLANs, IPv4 and IPv6 addressing and subnetting, routing basics, Wi-Fi standards and security, common ports and protocols, DHCP and DNS basics, NAT and VPN concepts, SNMP and syslog, network troubleshooting tools.
+
+**Labs**
+1. Install Cisco Packet Tracer (free with a Cisco Networking Academy account). Build two VLANs on one switch, route between them with a router, and give both VLANs DHCP.
+2. Subnetting drill: split a /24 for four departments of different sizes. Check your answers with a calculator only after you finish.
+3. Install Wireshark. Capture and label a DHCP exchange, a DNS lookup, a TCP three-way handshake and the start of an HTTPS connection.
+4. Read your home router's settings: DHCP range, DNS servers, Wi-Fi band and security mode, port forwarding. Screenshot first and change nothing you can't put back.
+5. Run the command-line tools on Windows and Linux: `ipconfig` and `ip`, `ping`, `tracert` and `traceroute`, `nslookup` and `dig`, `netstat` and `ss`, `arp`.
+6. Fault practice in Packet Tracer: a partner breaks one thing (wrong VLAN, wrong gateway, a shut interface, a duplicate IP). Find and fix it.
+
+**Prove it:** the Packet Tracer file with a diagram and addressing table, an annotated Wireshark capture, and a write-up of the fault practice.
+
+**Certs:** Network+ (all five domains: concepts 23%, implementation 20%, operations 19%, security 14%, troubleshooting 24%) and A+ Core 1 networking (23%). S1 builds on this in the full lab.
+
+**Gate: A+ Core 1 (220-1201)** happens here, with one review week.
+
+## F3. Operating systems, security and support (3 weeks)
+
+**Outcome:** you can install, configure and support Windows, find your way around macOS and Linux desktops, remove malware, and take a support ticket from first report to close.
+
+**Skills:** Windows editions and installation, Settings and Control Panel, Task Manager, Event Viewer, Device Manager, Disk Management, Safe Mode and recovery, command prompt and PowerShell basics, users, groups, NTFS and share permissions, macOS and Linux desktop basics, physical and logical security, malware removal, data destruction, scripting basics, remote access tools, ticketing, change management, backups, safety and professionalism.
+
+**Labs**
+1. In the Windows 11 VM, create a standard user and an admin user, share a folder with different NTFS and share permissions, and test access as each user.
+2. Work the tools: find a stopped service in Event Viewer, a missing driver in Device Manager, shrink a volume and add a partition in Disk Management, and boot into Safe Mode and the recovery options.
+3. Install an Ubuntu desktop VM and do the same user and permission tasks from the terminal. Note the differences.
+4. Malware removal: take a snapshot, trigger Microsoft Defender with the harmless EICAR test file, and follow CompTIA's malware removal steps in order, writing each one down. Revert the snapshot.
+5. Backups: set up File History, delete a file and restore it.
+6. Support practice: a partner sends three user tickets (can't print, slow PC, can't reach a share). Work each one in a ticket log, including the message you'd send the user.
+
+**Prove it:** the ticket log, a permissions test table (user, folder, expected, actual) and the malware removal write-up.
+
+**Certs:** A+ Core 2 (operating systems 28%, security 28%, software troubleshooting 23%, operational procedures 21%) and Network+ security (14%).
+
+**Gate: A+ Core 2 (220-1202)** happens here, with one review week.
+
+**Gate: Network+ (N10-009)** follows, with two review weeks: redo the F2 labs from memory, then practice exams.
 
 ---
 

@@ -2,12 +2,22 @@
 
 The sprints are the same for everyone. What changes is which parts a person does and whether they sit exams.
 
+## Track F: Foundations (A+, Network+)
+
+For people new to IT, or moving into IT from another kind of work.
+
+- Do F1, F2 and F3 (see SPRINTS.md).
+- Sit A+ Core 1 after F2, A+ Core 2 after F3, then Network+.
+- About 14 weeks at 8 hours per week.
+- Then pick B, C or D, or carry on with S0 as Track E does.
+
 ## Track A: Skills only (no exams)
 
 For people who want the capability without the certificate.
 
 - Do every sprint's labs and its "prove it" deliverable.
 - Skip the exam gates and their review weeks. That saves about 10 weeks.
+- New to IT? Do the F1 to F3 labs first, still without the exams.
 - Skip S9 (cloud architecture) and S11 (security operations) if they don't apply to the role, and jump to S13 with a smaller capstone.
 - Assessment is by peer review of the deliverables using the rubric in ASSESSMENT.md.
 
@@ -31,12 +41,14 @@ For people who want the capability without the certificate.
 
 ## Track E: Everyone (the full path)
 
-- All sprints S0 to S13 and all gates. About 54 weeks at 8 hours per week.
+- All seventeen sprints, F1 to F3 then S0 to S13, and all gates, A+ and Network+ included. About 68 weeks at 8 hours per week.
+- Already past the basics? Start at S0 and skip the Foundations block (54 weeks).
 
 ## Choosing
 
 | If your role is mostly... | Start with track |
 | --- | --- |
+| New to IT, or help desk and desktop support | F, then B, C or D |
 | Windows and Microsoft 365 administration | B |
 | Linux server administration | C |
 | Cloud engineering | B, then S9 and Cloud+ |

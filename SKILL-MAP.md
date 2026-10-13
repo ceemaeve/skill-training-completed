@@ -21,6 +21,16 @@ This is a judgment call based on the official outlines and study guides read on 
 | Security operations, governance, risk | S11 | | | ○ | ● | | | | ○ |
 | Containers, virtualization, HA | S12 | | | ◐ | | ◐ | | | ● (305/306) |
 
+**Foundations sprints (Tracks F and E)**
+
+| Skill area | Sprint | A+ Core 1 | A+ Core 2 | Network+ |
+| --- | --- | --- | --- | --- |
+| Hardware, devices and troubleshooting | F1 | ● | ○ | ○ |
+| Networking fundamentals | F2 | ◐ | | ● |
+| Operating systems, security and support | F3 | | ● | ◐ |
+
+Network+ also overlaps the core path: S1 (networking and name resolution) and S6 (security and hardening) go deeper on the same topics.
+
 ## How to read it
 
 - A skill area with several ● or ◐ marks is where one sprint pays off across multiple exams. Networking, identity, storage and security are the biggest.
@@ -28,6 +38,10 @@ This is a judgment call based on the official outlines and study guides read on 
 - Linux content is not one block. Each sprint from S1 to S8 has a short "Linux lane" so the Linux skills build up alongside the Windows and Azure ones. S10 and S12 then go deeper.
 
 ## Suggested emphasis by exam (from published domain weights)
+
+- **A+ Core 1 220-1201:** hardware and network troubleshooting 28%, hardware 25%, networking 23%, mobile devices 13%, virtualization and cloud computing 11%.
+- **A+ Core 2 220-1202:** operating systems 28%, security 28%, software troubleshooting 23%, operational procedures 21%.
+- **Network+ N10-009:** troubleshooting 24%, concepts 23%, implementation 20%, operations 19%, security 14%.
 
 - **AZ-802:** AD DS 20-25%, storage 15-20%, monitor/troubleshoot 15-20%, hybrid management, VMs, networking, security 10-15% each.
 - **AZ-104:** identity/governance 20-25%, compute 20-25%, storage 15-20%, networking 15-20%, monitor/backup 10-15%.

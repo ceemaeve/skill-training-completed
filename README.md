@@ -11,7 +11,7 @@ This is a download kit. Nothing in this repo is deployed to the website; the sit
 | File | What it's for |
 | --- | --- |
 | [SKILL-MAP.md](SKILL-MAP.md) | Which skill areas each certification tests. This is where the overlap is |
-| [SPRINTS.md](SPRINTS.md) | The 14 sprints, with labs, deliverables and exam gates |
+| [SPRINTS.md](SPRINTS.md) | The 17 sprints (3 Foundations, 14 core), with labs, deliverables and exam gates |
 | [TRACKS.md](TRACKS.md) | Paths for different roles, including skills-only |
 | [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md) | VM layout, networks, snapshots, Azure sandbox rules |
 | [ASSESSMENT.md](ASSESSMENT.md) | Proficiency levels, peer review and exam readiness |
@@ -20,12 +20,12 @@ This is a download kit. Nothing in this repo is deployed to the website; the sit
 
 ## Certifications covered
 
-Microsoft AZ-802 and AZ-104, CompTIA Cloud+, Security+ and Linux+, and LPIC-1, 2 and 3. Exam versions change, so re-check the official pages before booking.
+CompTIA A+ and Network+ (Foundations), Microsoft AZ-802 and AZ-104, CompTIA Cloud+, Security+ and Linux+, and LPIC-1, 2 and 3. Exam versions change, so re-check the official pages before booking.
 
 ## How to use it
 
 1. Pick a track in TRACKS.md.
-2. Build the lab in LAB-ENVIRONMENT.md (sprint S0).
+2. Build the lab in LAB-ENVIRONMENT.md (sprint S0). Track F starts smaller, with the Foundations lab in F1.
 3. Work through the sprints in order. Finish each "prove it" deliverable and get a peer review.
 4. Track your own progress in a copy of PROGRESS-TEMPLATE.md.
 5. Book an exam only when the readiness gate in ASSESSMENT.md is met.
