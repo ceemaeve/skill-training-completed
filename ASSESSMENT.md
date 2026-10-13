@@ -15,7 +15,7 @@ Aim for level 2 on every sprint before you move on, and level 3 on the areas you
 
 ## Sprint check (peer review)
 
-A teammate reviews your deliverable with these questions. All must be yes to mark the sprint done.
+A teammate or study partner reviews your deliverable with these questions. All must be yes to mark the sprint done. Studying alone? Find a study partner in this repo's [Discussions](https://github.com/ceemaeve/skill-training-completed/discussions).
 
 1. Does it work when someone else follows the steps?
 2. Is every setting justified, not just copied?
