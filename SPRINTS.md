@@ -4,7 +4,7 @@ Eighteen sprints: three Foundations sprints (F1 to F3) for people new to IT, the
 
 **Pacing assumption:** about 8 hours per week (3 reading or video, 4 hands-on lab, 1 review). Change the pace and the calendar moves, but not the order. Week counts below are planning estimates.
 
-**Windows-first ordering:** S1 to S8 lean Windows and Azure so the AZ-802 gate lands first (your target is within 3 to 6 months). Each of those sprints has a short **Linux lane** to build the Linux skills in parallel.
+**Windows-first ordering:** S1 to S8 lean Windows and Azure so the AZ-802 gate lands first, about 5.8 months after S0. Each of those sprints has a short **Linux lane** to build the Linux skills in parallel.
 
 Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md).
 
@@ -41,9 +41,9 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 | S5 | Storage and file services | 3 | 18 |
 | S6 | Security and hardening | 3 | 21 |
 | S7 | Monitoring, backup, troubleshooting | 3 | 24 |
-| **Gate** | **AZ-802 exam** (plus 1 review week) | 1 | 25 |
+| **Gate** | **AZ-802** (1 review week) | 1 | 25 |
 | S8 | Automation and infrastructure as code | 3 | 28 |
-| **Gate** | **AZ-104 exam** (plus 1 review week) | 1 | 29 |
+| **Gate** | **AZ-104** (1 review week) | 1 | 29 |
 | S9 | Cloud architecture and operations | 3 | 32 |
 | **Gate** | **Cloud+ exam** (1 review week) | 1 | 33 |
 | S10 | Linux services and advanced admin | 4 | 37 |
@@ -57,9 +57,9 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 
 The core path is 54 weeks, about 12.5 months at 8 hours per week. Track E adds the 14 Foundations weeks in front, for 68 weeks (about 15.7 months). The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
 
-**First exam timing:** counted from S0, AZ-802 lands at week 25 (about 5.8 months) at 8 hours per week, the top of a 3 to 6 month target. At 12 hours per week it lands around week 17 (about 4 months). On Track F and E the first exam is A+ Core 1, at week 8.
+**First exam timing:** counted from S0, AZ-802 lands at week 25 (about 5.8 months) at 8 hours per week. At 12 hours per week it lands around week 17 (about 4 months). On Track F and E the first exam is A+ Core 1, at week 8.
 
-**Security+ timing:** V8 is expected around Nov 17, 2026. This plan reaches Security+ well after that, so study V8 objectives. Check comptia.org for the final exam code and objectives.
+**Security+ timing:** V8 (SY0-801) launches on November 17, 2026, and V7 retires on June 11, 2027. Security+ comes at week 43 of the core sprints, so anyone starting after mid-2026 reaches it after V8 launches. Study the V8 objectives.
 
 ---
 

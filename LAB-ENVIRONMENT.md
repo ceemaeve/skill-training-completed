@@ -1,6 +1,6 @@
 # Lab environment
 
-Host: Core 7 150U, 32GB RAM, 1TB NVMe, VMware Workstation. Nested Hyper-V is out of scope, so any lab that needs a hypervisor inside a VM is done as reading and light configuration only.
+Host: A host with 32GB RAM (about 16GB with every VM on), an SSD with about 500GB free, and VMware Workstation. Nested Hyper-V is out of scope, so any lab that needs a hypervisor inside a VM is done as reading and light configuration only.
 
 ## Networks
 

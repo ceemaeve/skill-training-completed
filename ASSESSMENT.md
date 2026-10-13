@@ -23,7 +23,7 @@ A teammate reviews your deliverable with these questions. All must be yes to mar
 4. Did you break it on purpose and fix it at least once?
 5. Is anything sensitive (passwords, keys) kept out of the repo?
 
-## Exam readiness gate
+## Exam readiness checklist
 
 Before booking a certification exam:
 

@@ -28,6 +28,7 @@ For people who want the capability without the certificate.
 - Skip the exam gates and their review weeks. That saves about 10 weeks.
 - New to IT? Do the F1 to F3 labs first, still without the exams.
 - Skip S9 (cloud architecture) and S11 (security operations) if they don't apply to the role, and jump to S13 with a smaller capstone.
+- About 44 weeks at 8 hours per week (38 if you skip S9 and S11).
 - Assessment is by peer review of the deliverables using the rubric in ASSESSMENT.md.
 
 ## Track B: Microsoft (AZ-802, AZ-104)
@@ -36,21 +37,22 @@ For people who want the capability without the certificate.
 - Sit AZ-802 after S7 and AZ-104 after S8.
 - About 29 weeks at 8 hours per week.
 
-## Track C: Linux (Linux+, LPIC-1, 2, 3)
+## Track C: Linux (Linux+, LPIC-1, LPIC-2, LPIC-3)
 
 - Do S0, S1, S2, S5, S6, S7 and S8 with the Linux lane as the main lab and the Windows lab as reference.
-- Then S10 and S12.
+- Then S10, S12 and the capstone (S13).
 - Sit Linux+ and LPIC-1 after S10, LPIC-2 after S12, LPIC-3 after the capstone.
+- About 38 weeks at 8 hours per week.
 
 ## Track D: Security-focused
 
-- Do S0 through S2, S6, S7, S11 and the capstone with a security emphasis.
-- Add S9 for cloud security context.
-- Sit Security+ after S11 and Cloud+ after S9 if wanted.
+- Do S0 through S2, S6, S7, S9, S11 and the capstone with a security emphasis. S9 adds cloud security context.
+- Sit Cloud+ after S9 and Security+ after S11.
+- About 26 weeks at 8 hours per week (22 if you skip S9 and Cloud+).
 
-## Track E: Everyone (the full path)
+## Track E: Everyone
 
-- All seventeen sprints, F1 to F3 then S0 to S13, and all their gates, A+ and Network+ included. About 68 weeks at 8 hours per week. CCNA is not in Track E; add N1 and its gate (6 weeks) if you want it.
+- Every sprint except N1 (Cisco): F1 to F3, then S0 to S13, with all their exam gates, A+ and Network+ included. About 68 weeks at 8 hours per week. CCNA is not in Track E; add N1 and its gate (6 weeks) if you want it.
 - Already past the basics? Start at S0 and skip the Foundations block (54 weeks).
 
 ## Choosing

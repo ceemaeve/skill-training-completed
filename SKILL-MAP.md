@@ -4,7 +4,7 @@ The curriculum is organized by skill, not by certification. Each skill area is t
 
 **Key:** ● primary topic for that exam, ◐ partly covered, ○ light mention, blank = not covered.
 
-This is a judgment call based on the official outlines and study guides read on 2026-09-29 (AZ-802, AZ-104, Cloud+ CV0-004, Linux+ XK0-006, LPIC-1/2/3 topic lists). Security+ is mapped to the current V7 objectives from general knowledge. V8 objectives have not been checked yet, so recheck this column when V8 is published.
+This is a judgment call based on the official outlines and study guides read on 2026-09-29 (AZ-802, AZ-104, Cloud+ CV0-004, Linux+ XK0-006, LPIC-1/2/3 topic lists). The Security+ column follows the V8 (SY0-801) objectives, checked on 2026-10-13.
 
 | Skill area | Sprint | AZ-802 | AZ-104 | Cloud+ | Sec+ | Linux+ | LPIC-1 | LPIC-2 | LPIC-3 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -15,11 +15,11 @@ This is a judgment call based on the official outlines and study guides read on 
 | Storage and file services | S5 | ● | ● | ◐ | | ◐ | ◐ | ● | ◐ (306) |
 | Security and hardening | S6 | ◐ | ○ | ● | ● | ◐ | ◐ | ◐ | ◐ (303) |
 | Monitoring, backup, troubleshooting | S7 | ● | ◐ | ◐ | ◐ | ● | ○ | ◐ | ◐ |
-| Automation and infrastructure as code | S8 | ○ | ◐ | ◐ | ○ | ● | ◐ | ○ | ○ |
+| Automation and infrastructure as code | S8 | ○ | ◐ | ◐ | ◐ | ● | ◐ | ○ | ○ |
 | Cloud architecture and operations | S9 | ○ | ◐ | ● | ◐ | ○ | | | |
 | Linux services and advanced admin | S10 | | | | | ◐ | ◐ | ● | ◐ |
 | Security operations, governance, risk | S11 | | | ○ | ● | | | | ○ |
-| Containers, virtualization, HA | S12 | | | ◐ | | ◐ | | | ● (305/306) |
+| Containers, virtualization, HA | S12 | | | ◐ | ○ | ◐ | | | ● (305/306) |
 
 **Foundations sprints (Tracks F and E)**
 
@@ -42,7 +42,7 @@ Network+ also overlaps the core path: S1 (networking and name resolution) and S6
 ## How to read it
 
 - A skill area with several ● or ◐ marks is where one sprint pays off across multiple exams. Networking, identity, storage and security are the biggest.
-- LPIC-3 has four tracks. Only one is taken, so the LPIC-3 column shows the track that fits each area. Pick your track by S12.
+- LPIC-3 has four specialties. You take only one, so the LPIC-3 column shows the specialty that fits each area. Pick yours by S12.
 - Linux content is not one block. Each sprint from S1 to S8 has a short "Linux lane" so the Linux skills build up alongside the Windows and Azure ones. S10 and S12 then go deeper.
 
 ## Suggested emphasis by exam (from published domain weights)
@@ -55,4 +55,5 @@ Network+ also overlaps the core path: S1 (networking and name resolution) and S6
 - **AZ-802:** AD DS 20-25%, storage 15-20%, monitor/troubleshoot 15-20%, hybrid management, VMs, networking, security 10-15% each.
 - **AZ-104:** identity/governance 20-25%, compute 20-25%, storage 15-20%, networking 15-20%, monitor/backup 10-15%.
 - **Cloud+ CV0-004:** architecture 23%, deployment 19%, security 19%, operations 17%, troubleshooting 12%, DevOps fundamentals 10%.
+- **Security+ SY0-801 (V8):** security operations 27%, threats, vulnerabilities and attacks 24%, security architecture 19%, general security concepts 16%, program management and oversight 14%.
 - **Linux+ XK0-006:** system management 23%, troubleshooting 22%, services and user management 20%, security 18%, automation 17%.

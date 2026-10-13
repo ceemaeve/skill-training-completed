@@ -1,6 +1,6 @@
 # Skill Training Completed: study kit
 
-A skills-first study path covering Windows Server, Azure, Linux, cloud and security. It is built around a VMware Workstation home lab. Certifications are optional gates along the way, not the structure. Written for a small team, and usable on your own.
+A skills-first study path from IT basics through Windows Server, Azure, Linux, Cisco networking, cloud and security. It is built around a VMware Workstation home lab. Certifications are optional gates along the way, not the structure. Written for a small team, and usable on your own.
 
 Site and calendar: https://skills.ceema.dev, part of [ceema.dev](https://ceema.dev)
 
@@ -16,7 +16,7 @@ This is a download kit. Nothing in this repo is deployed to the website; the sit
 | [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md) | VM layout, networks, snapshots, Azure sandbox rules |
 | [ASSESSMENT.md](ASSESSMENT.md) | Proficiency levels, peer review and exam readiness |
 | [PROGRESS-TEMPLATE.md](PROGRESS-TEMPLATE.md) | Copy this to track your own progress |
-| [CERT-NOTES.md](CERT-NOTES.md) | Exam facts as checked on 2026-09-29 |
+| [CERT-NOTES.md](CERT-NOTES.md) | Exam facts as checked on 2026-10-13 |
 
 ## Certifications covered
 
@@ -28,7 +28,7 @@ CompTIA A+ and Network+ (Foundations), Cisco CCNA (Networking), Microsoft AZ-802
 2. Build the lab in LAB-ENVIRONMENT.md (sprint S0). Track F starts smaller, with the Foundations lab in F1.
 3. Work through the sprints in order. Finish each "prove it" deliverable and get a peer review.
 4. Track your own progress in a copy of PROGRESS-TEMPLATE.md.
-5. Book an exam only when the readiness gate in ASSESSMENT.md is met.
+5. Book an exam only when you meet the readiness checklist in ASSESSMENT.md.
 
 ## Using it with your own Claude
 
