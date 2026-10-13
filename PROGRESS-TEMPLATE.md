@@ -11,6 +11,7 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | Sprint | Skill area | Level | Deliverable link | Peer reviewer | Done |
 | --- | --- | --- | --- | --- | --- |
 | C1 | Claude basics | | | | [ ] |
+| P1 | Copilot basics | | | | [ ] |
 | F1 | Hardware, devices and troubleshooting | | | | [ ] |
 | F2 | Networking fundamentals | | | | [ ] |
 | F3 | Operating systems, security and support | | | | [ ] |
@@ -32,6 +33,8 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | A1 | AWS core services | | | | [ ] |
 | C2 | Claude for IT work | | | | [ ] |
 | C3 | Skills and agents | | | | [ ] |
+| P2 | Copilot and agent administration | | | | [ ] |
+| P3 | GitHub Copilot for scripts | | | | [ ] |
 
 ## Exams
 
@@ -50,6 +53,8 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | LPIC-3 (track: ) | [ ] | | | |
 | CCNA | [ ] | | | |
 | AWS Solutions Architect – Associate | [ ] | | | |
+| AB-900 | [ ] | | | |
+| GH-300 | [ ] | | | |
 
 ## Notes and lessons
 

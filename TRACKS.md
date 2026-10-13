@@ -2,7 +2,7 @@
 
 The sprints are the same for everyone. What changes is which parts a person does and whether they sit exams.
 
-Every track starts with C1, Claude basics (2 weeks, see SPRINTS.md). The weeks below include it.
+Every track starts with C1, Claude basics (2 weeks, see SPRINTS.md). Tracks A, B, D, E and J then take P1, Copilot basics (2 weeks). The weeks below include them.
 
 ## Track F: Foundations (A+, Network+)
 
@@ -42,6 +42,16 @@ For anyone who wants to use Claude well in IT work, on its own or next to anothe
 - About 8 weeks at 8 hours per week.
 - On another track already? Add C2 and C3 after S0 (4 weeks).
 
+## Track J: Copilot (AB-900, GH-300)
+
+For IT people asked to roll out or support Microsoft 365 Copilot, and for anyone who scripts with GitHub Copilot.
+
+- Do C1, P1, S0, S1, S2, S3, S6, P2 and P3 (see SPRINTS.md). S1 to S3 and S6 give P2 the identity and security groundwork it needs.
+- Sit AB-900 after P2 and GH-300 after P3.
+- P2 needs a one-month Microsoft 365 Business free trial (card required; cancel before it ends). P3 works on GitHub Copilot Free.
+- About 26 weeks at 8 hours per week.
+- On Track B already? It includes P2 and AB-900; add P3 and GH-300 (3 weeks) for GitHub Copilot.
+
 ## Track A: Skills only (no exams)
 
 For people who want the capability without the certificate.
@@ -50,14 +60,15 @@ For people who want the capability without the certificate.
 - Skip the exam gates and their review weeks. That saves about 10 weeks.
 - New to IT? Do the F1 to F3 labs first, still without the exams.
 - Skip S9 (cloud architecture) and S11 (security operations) if they don't apply to the role, and jump to S13 with a smaller capstone.
-- About 46 weeks at 8 hours per week (40 if you skip S9 and S11).
+- About 48 weeks at 8 hours per week (42 if you skip S9 and S11).
 - Assessment is by peer review of the deliverables using the rubric in ASSESSMENT.md.
 
 ## Track B: Microsoft (AZ-802, AZ-104)
 
 - Do S0 through S8, including the Linux lanes at reduced depth (one lab per sprint is enough).
 - Sit AZ-802 after S7 and AZ-104 after S8.
-- About 31 weeks at 8 hours per week.
+- Then P2 (Copilot and agent administration) and AB-900. Microsoft 365 admins are the people who roll Copilot out.
+- About 37 weeks at 8 hours per week.
 
 ## Track C: Linux (Linux+, LPIC-1, LPIC-2, LPIC-3)
 
@@ -70,12 +81,12 @@ For people who want the capability without the certificate.
 
 - Do S0 through S2, S6, S7, S9, S11 and the capstone with a security emphasis. S9 adds cloud security context.
 - Sit Cloud+ after S9 and Security+ after S11.
-- About 28 weeks at 8 hours per week (24 if you skip S9 and Cloud+).
+- About 30 weeks at 8 hours per week (26 if you skip S9 and Cloud+).
 
 ## Track E: Everyone
 
-- Every sprint except N1 (Cisco), A1 (AWS), C2 and C3 (Claude): C1, F1 to F3, then S0 to S13, with all their exam gates, A+ and Network+ included. About 70 weeks at 8 hours per week. CCNA, AWS and the later Claude sprints are not in Track E; add N1 and its gate (6 weeks) for CCNA, A1 and its gate (6 weeks) for AWS, or C2 and C3 (4 weeks) for more Claude.
-- Already past the basics? Do C1, then start at S0 and skip the Foundations block (56 weeks).
+- Every sprint except N1 (Cisco), A1 (AWS), C2 and C3 (Claude), P2 and P3 (Copilot): C1, P1, F1 to F3, then S0 to S13, with all their exam gates, A+ and Network+ included. About 72 weeks at 8 hours per week. CCNA, AWS and the later Claude and Copilot sprints are not in Track E; add N1 and its gate (6 weeks) for CCNA, A1 and its gate (6 weeks) for AWS, C2 and C3 (4 weeks) for more Claude, P2 and AB-900 (4 weeks) for Copilot administration, or P3 and GH-300 (3 weeks) for GitHub Copilot.
+- Already past the basics? Do C1 and P1, then start at S0 and skip the Foundations block (58 weeks).
 
 ## Choosing
 
@@ -91,6 +102,7 @@ For people who want the capability without the certificate.
 | A mix, or growing into a senior generalist | E |
 | Not interested in exams | A, with the other track's sprints as a guide |
 | Using Claude well in IT work | I, on its own or next to another track |
+| Rolling out or supporting Copilot | J (B if you also want the Windows Server and Azure exams) |
 
 ## Working as a team
 

@@ -85,6 +85,14 @@ Delete old snapshots regularly. A long snapshot chain slows the disk and eats sp
 4. Read every change and command before you approve it. You own what it does.
 5. Check answers against the official docs before they go in a deliverable, and say where Claude helped.
 
+## Copilot rules (P1 to P3)
+
+1. Use your own Microsoft and GitHub accounts. Never use an employer's tenant or organization for lab work.
+2. For P2, create a new tenant with a Microsoft 365 Business free trial. It needs a card and becomes a paid subscription unless you cancel, so put the end date in your calendar and cancel before it.
+3. Use test users and made-up sample files only. Never real names, ID numbers or company data.
+4. Don't link a payment method for pay-as-you-go agents. Reading how billing works is enough.
+5. Never paste a password, key or token into a prompt, and keep secrets out of the scripts repo.
+
 ## Backups of the lab itself
 
 - Copy your VM folders or export the key VMs (DC1, SRV1, LNX1) to an external drive after major milestones.
