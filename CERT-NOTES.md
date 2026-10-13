@@ -15,6 +15,8 @@ Last checked: 2026-10-13. The study order lives in [SPRINTS.md](SPRINTS.md); thi
 | CompTIA A+ (Foundations) | 220-1201 (Core 1), 220-1202 (Core 2) | 90 min, max 90 questions each; pass 675 (Core 1), 700 (Core 2) | V15, launched Mar 2025, estimated 2028 retirement. Both exams needed, in any order. Added 2026-10-13 |
 | Cisco CCNA (Networking) | 200-301 | 120 min, $300 | v1.1 until Feb 2, 2027; v2.0 from Feb 3, 2027 (same code). No prerequisites. Valid 3 years. Added 2026-10-13 |
 | AWS Certified Solutions Architect – Associate (AWS) | SAA-C03 | 130 min, 65 questions (50 scored), pass 720, $150 | No new version announced (checked 2026-10-13). AWS recommends a year of hands-on AWS design work; no prerequisite. Valid 3 years. Added 2026-10-13 |
+| Microsoft 365 Certified: Copilot and Agent Administration Fundamentals (Copilot) | AB-900 | $99 | Skills list updated October 14, 2026. Free practice assessment on Microsoft Learn. Added 2026-10-13 |
+| GitHub Copilot (Copilot) | GH-300 | $99, pass 700 | Valid 2 years. Free practice assessment on Microsoft Learn. Skills list current as of August 7, 2026. Added 2026-10-13 |
 | CompTIA Network+ (Foundations) | N10-009 | 90 min, max 90 questions, pass 720 | V9, launched Jun 20, 2024, estimated 2027 retirement. Added 2026-10-13 |
 | Microsoft AZ-802, Administering Windows Server | AZ-802 | Pass mark 700 | AD DS 20-25%, storage 15-20%, monitor/troubleshoot 15-20%, hybrid mgmt, VMs, networking, security 10-15% each |
 | Microsoft AZ-104, Azure Administrator | AZ-104 | Pass mark 700 | Identity/governance 20-25%, compute 20-25%, storage 15-20%, networking 15-20%, monitor/backup 10-15% |
@@ -55,6 +57,8 @@ The VM layout, networks and snapshot rules are in [LAB-ENVIRONMENT.md](LAB-ENVIR
 - [CompTIA A+](https://www.comptia.org/en-us/certifications/a/)
 - [CompTIA Network+](https://www.comptia.org/en-us/certifications/network/)
 - [Cisco CCNA](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html) and [CCNA v2.0 exam topics](https://learningnetwork.cisco.com/s/ccna-v2-exam-topics)
+- [AB-900 certification](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/) and [study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900)
+- [GH-300 certification](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) and [study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300)
 - [AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/) and [SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html)
 - [AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802)
 - [AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)

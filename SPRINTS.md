@@ -1,6 +1,6 @@
 # Sprint plan
 
-Twenty-two sprints: three Claude sprints (C1 to C3), three Foundations sprints (F1 to F3) for people new to IT, the fourteen core sprints (S0 through S13), one Cisco networking sprint (N1) for Track G, and one AWS sprint (A1) for Track H. Every track starts with C1, Claude basics; C2 and C3 are Track I. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
+Twenty-five sprints: three Claude sprints (C1 to C3), three Copilot sprints (P1 to P3), three Foundations sprints (F1 to F3) for people new to IT, the fourteen core sprints (S0 through S13), one Cisco networking sprint (N1) for Track G, and one AWS sprint (A1) for Track H. Every track starts with C1, Claude basics; C2 and C3 are Track I. Tracks A, B, D, E and J add P1, Copilot basics; P2 and P3 are for Tracks B and J. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
 
 **Pacing assumption:** about 8 hours per week (3 reading or video, 4 hands-on lab, 1 review). Change the pace and the calendar moves, but not the order. Week counts below are planning estimates.
 
@@ -51,38 +51,55 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 | C2 | Claude for IT work | 2 | 6 |
 | C3 | Skills and agents | 2 | 8 |
 
-**Core path (C1, then S0 to S13)**
+**Copilot (Track J)**
+
+| Step | Skill area | Weeks | Running total |
+| --- | --- | --- | --- |
+| C1 | Claude basics | 2 | 2 |
+| P1 | Copilot basics | 2 | 4 |
+| S0 | Lab and foundations | 2 | 6 |
+| S1 | Networking and name resolution | 3 | 9 |
+| S2 | Identity and directory services | 4 | 13 |
+| S3 | Hybrid identity and governance | 3 | 16 |
+| S6 | Security and hardening | 3 | 19 |
+| P2 | Copilot and agent administration | 3 | 22 |
+| **Gate** | **AB-900** (1 review week) | 1 | 23 |
+| P3 | GitHub Copilot for scripts | 2 | 25 |
+| **Gate** | **GH-300** (1 review week) | 1 | 26 |
+
+**Core path (C1 and P1, then S0 to S13)**
 
 | Sprint | Skill area | Weeks | Running total |
 | --- | --- | --- | --- |
 | C1 | Claude basics | 2 | 2 |
-| S0 | Lab and foundations | 2 | 4 |
-| S1 | Networking and name resolution | 3 | 7 |
-| S2 | Identity and directory services | 4 | 11 |
-| S3 | Hybrid identity and governance | 3 | 14 |
-| S4 | Compute and virtualization | 3 | 17 |
-| S5 | Storage and file services | 3 | 20 |
-| S6 | Security and hardening | 3 | 23 |
-| S7 | Monitoring, backup, troubleshooting | 3 | 26 |
-| **Gate** | **AZ-802** (1 review week) | 1 | 27 |
-| S8 | Automation and infrastructure as code | 3 | 30 |
-| **Gate** | **AZ-104** (1 review week) | 1 | 31 |
-| S9 | Cloud architecture and operations | 3 | 34 |
-| **Gate** | **Cloud+ exam** (1 review week) | 1 | 35 |
-| S10 | Linux services and advanced admin | 4 | 39 |
-| **Gate** | **Linux+ and LPIC-1** (2 review weeks) | 2 | 41 |
-| S11 | Security operations, governance, risk | 3 | 44 |
-| **Gate** | **Security+** (1 review week) | 1 | 45 |
-| S12 | Containers, virtualization, HA | 4 | 49 |
-| **Gate** | **LPIC-2** (2 review weeks) | 2 | 51 |
-| S13 | Capstone | 3 | 54 |
-| **Gate** | **LPIC-3, one specialty** (2 review weeks) | 2 | 56 |
+| P1 | Copilot basics | 2 | 4 |
+| S0 | Lab and foundations | 2 | 6 |
+| S1 | Networking and name resolution | 3 | 9 |
+| S2 | Identity and directory services | 4 | 13 |
+| S3 | Hybrid identity and governance | 3 | 16 |
+| S4 | Compute and virtualization | 3 | 19 |
+| S5 | Storage and file services | 3 | 22 |
+| S6 | Security and hardening | 3 | 25 |
+| S7 | Monitoring, backup, troubleshooting | 3 | 28 |
+| **Gate** | **AZ-802** (1 review week) | 1 | 29 |
+| S8 | Automation and infrastructure as code | 3 | 32 |
+| **Gate** | **AZ-104** (1 review week) | 1 | 33 |
+| S9 | Cloud architecture and operations | 3 | 36 |
+| **Gate** | **Cloud+ exam** (1 review week) | 1 | 37 |
+| S10 | Linux services and advanced admin | 4 | 41 |
+| **Gate** | **Linux+ and LPIC-1** (2 review weeks) | 2 | 43 |
+| S11 | Security operations, governance, risk | 3 | 46 |
+| **Gate** | **Security+** (1 review week) | 1 | 47 |
+| S12 | Containers, virtualization, HA | 4 | 51 |
+| **Gate** | **LPIC-2** (2 review weeks) | 2 | 53 |
+| S13 | Capstone | 3 | 56 |
+| **Gate** | **LPIC-3, one specialty** (2 review weeks) | 2 | 58 |
 
-The core path is 56 weeks with C1, about 12.9 months at 8 hours per week. Track E adds the 14 Foundations weeks after C1, for 70 weeks (about 16.2 months). The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
+The core path is 58 weeks with C1 and P1, about 13.4 months at 8 hours per week. Track E adds the 14 Foundations weeks after them, for 72 weeks (about 16.6 months). The earlier cert-by-cert roadmap came out near 18 months, so the overlap saves several months. Skip the gates for people on the skills-only track (see [TRACKS.md](TRACKS.md)).
 
-**First exam timing:** counted from the start of the track (C1), AZ-802 lands at week 27 (about 6.2 months) at 8 hours per week. At 12 hours per week it lands around week 18 (about 4.2 months). On Track F the first exam is A+ Core 1, at week 10.
+**First exam timing:** counted from the start of the track (C1), AZ-802 lands at week 29 (about 6.7 months) at 8 hours per week. At 12 hours per week it lands around week 19 (about 4.5 months). On Track F the first exam is A+ Core 1, at week 10.
 
-**Security+ timing:** V8 (SY0-801) launches on November 17, 2026, and V7 retires on June 11, 2027. Security+ comes at week 45 of the core path, so anyone starting after mid-2026 reaches it after V8 launches. Study the V8 objectives.
+**Security+ timing:** V8 (SY0-801) launches on November 17, 2026, and V7 retires on June 11, 2027. Security+ comes at week 47 of the core path, so anyone starting after mid-2026 reaches it after V8 launches. Study the V8 objectives.
 
 ---
 
@@ -544,3 +561,83 @@ Claude is an AI assistant made by Anthropic. These sprints teach it the way the 
 **Prove it:** the Skill folder in your repo, a test log (requests that should and shouldn't use it) and your partner's notes from lab 4.
 
 **Certs:** none.
+
+---
+
+## Copilot (P1 in Tracks A, B, D, E and J; P2 and P3 for Tracks B and J)
+
+Microsoft has two Copilots that matter for IT work. Microsoft 365 Copilot works across Word, Outlook, Teams and SharePoint, and IT runs it: licences, settings, data protection and agents. GitHub Copilot helps write code and scripts. P1 teaches using Copilot well and checking it. P2 teaches running Microsoft 365 Copilot and its agents, and leads to AB-900. P3 puts GitHub Copilot to work on your lab scripts, and leads to GH-300.
+
+**Rules for every Copilot lab:** never paste a password, key, token, or real company or personal data into a prompt. Use your own accounts and your own trial tenant, never an employer's. Treat every answer as a draft and check it against the official docs or your lab.
+
+**Plans and cost:** P1 works with the free Microsoft Copilot app or Copilot Chat. P2 needs a Microsoft 365 tenant: a one-month Microsoft 365 Business free trial (up to 25 users) is enough. It needs a credit card and turns into a paid subscription unless you cancel, so start it on P2's first day and cancel before the month ends. P3 works on GitHub Copilot Free (2,000 completions a month and a chat allowance); Copilot Pro is $10 a month if you run out. Check current plans and prices before you start.
+
+**Courses:** all free on Microsoft Learn. P1: [Work smarter with AI](https://learn.microsoft.com/en-us/training/paths/work-smarter-with-ai/), [AI Fluency](https://learn.microsoft.com/en-us/training/paths/ai-fluency/) and [Empower your workforce with Microsoft Copilot](https://learn.microsoft.com/en-us/training/paths/empower-workforce-copilot-use-cases/). P2: course [AB-900T00](https://learn.microsoft.com/en-us/training/courses/ab-900t00/) ([Explore Microsoft 365 administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-administration/) and [Explore Microsoft 365 Copilot and agent administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-agent-administration/)). P3: course [GH-300T00](https://learn.microsoft.com/en-us/training/courses/gh-300t00/) ([GitHub Copilot Fundamentals part 1](https://learn.microsoft.com/training/paths/copilot/) and [part 2](https://learn.microsoft.com/training/paths/gh-copilot-2/)).
+
+## P1. Copilot basics (2 weeks)
+
+**Outcome:** you can use Microsoft Copilot for study and admin work, check what it tells you, and explain what Microsoft 365 Copilot can see.
+
+**Skills:** prompts with a goal, context, source and expectations; checking the sources Copilot cites; the difference between web-grounded Copilot Chat and Microsoft 365 Copilot, which works through Microsoft Graph and your permissions; what agents are; what never goes into a prompt.
+
+**Courses:** Work smarter with AI, AI Fluency, Empower your workforce with Microsoft Copilot.
+
+**Labs**
+1. Same question, two assistants: ask Copilot and Claude (from C1) how to create a DHCP scope with PowerShell. Check both answers against Microsoft's docs and note the differences.
+2. Check the sources: ask a question where Copilot cites web pages. Open each source and mark whether it says what Copilot claims.
+3. Better prompts: take a vague prompt, rewrite it with a goal, context, source and expectations, and compare the answers.
+4. What it can see: read how Microsoft 365 Copilot uses Microsoft Graph and each user's permissions. Write a short note on why a file shared with "everyone" becomes something Copilot can show anyone. P2 builds on this.
+5. Team rules: write a one-page "Copilot rules" sheet for a small IT team: what never goes in a prompt, how to check answers, and when to say Copilot helped.
+
+**Prove it:** the comparison log from labs 1 and 2 (claim, source, verdict), the before and after prompts from lab 3, and your team rules sheet. A partner reviews them.
+
+**Certs:** none. P1 is the groundwork for AB-900 in P2.
+
+## P2. Copilot and agent administration (3 weeks)
+
+**Outcome:** you can set up, protect and monitor Microsoft 365 Copilot and agents in a tenant, and find oversharing before Copilot surfaces it.
+
+**Before you start:** S2, S3 and S6, and a Microsoft 365 Business free trial in a new tenant of your own (see Plans and cost above).
+
+**Skills:** the Microsoft 365, Exchange, SharePoint and Teams admin centers; licences; users and groups; Microsoft Entra ID sign-in security (MFA, conditional access, single sign-on, Secure Score, audit logs); Microsoft Purview (sensitivity labels, data loss prevention, retention, content search, Compliance Manager); SharePoint sharing and oversharing reports; Copilot settings in the Microsoft 365 admin center (the Copilot Control System, web search, usage reports); Copilot licensing (monthly or pay-as-you-go); agent creation, approval and monitoring in the Microsoft 365 and Power Platform admin centers.
+
+**Courses:** AB-900T00: Explore Microsoft 365 administration, and Explore Microsoft 365 Copilot and agent administration.
+
+**Labs**
+1. Tenant: start the trial, add five test users and two groups, and assign licences. Turn on MFA for every account.
+2. Oversharing: create two SharePoint sites with sample files. Share one too widely, then find it with SharePoint's sharing and access reports and fix it.
+3. Protect data: create a sensitivity label and a data loss prevention policy for a made-up ID number pattern, and test them with a sample file. Never use real data.
+4. Copilot controls: in the Microsoft 365 admin center, pin Copilot Chat for users, turn off web search for one group, and read the usage report.
+5. Agents: build a simple FAQ agent as a test user. Then, as admin, find it, decide who may create agents, and approve or block it. Read how pay-as-you-go billing works, but don't link a payment method.
+6. Audit: find your own admin changes in the audit log and run a content search for a test word.
+7. Close down: export your notes and screenshots, then cancel the trial by turning off recurring billing. Write down the date.
+
+**Prove it:** a one-page tenant runbook: what you turned on, what you locked down, the oversharing you found and fixed, and your agent policy, with screenshots. A partner reviews it.
+
+**Certs:** AB-900 (Microsoft 365 core features and objects 30–35%, data protection and governance for Microsoft 365 and Copilot 35–40%, Copilot and agent administration 25–30%).
+
+**Gate: AB-900** happens here, with one review week. Take the free practice assessment on Microsoft Learn first.
+
+## P3. GitHub Copilot for scripts (2 weeks)
+
+**Outcome:** you can use GitHub Copilot to write, explain and test lab scripts, and you review every suggestion before you keep it.
+
+**Before you start:** S0 (command line and Git), a GitHub account and VS Code. Copilot Free is enough for the labs.
+
+**Skills:** inline suggestions, Copilot Chat, inline chat and slash commands in VS Code; agent mode; the Copilot CLI; prompt and context crafting; repository custom instructions; generating tests and documentation; privacy settings, matching public code and content exclusions (on business plans); responsible use.
+
+**Courses:** GH-300T00: GitHub Copilot Fundamentals parts 1 and 2.
+
+**Labs**
+1. Set up: install VS Code, sign in with GitHub, turn on Copilot Free and open your lab scripts repo (from S0, or from C2 if you did it).
+2. PowerShell: write a function with inline suggestions, then use chat to add comment-based help and Pester tests. Run them.
+3. Bash: ask Copilot to explain an unfamiliar script line by line, and check its answer against the man pages.
+4. Context: add repository custom instructions with your lab rules (VM names, "lab only, never production", how to test). Compare the suggestions before and after.
+5. Privacy: read your Copilot settings, including suggestions that match public code, and write down what content exclusions would add on a business plan.
+6. Review log: for every suggestion you kept, note what you checked and what you changed. If you did C2, do one task with both tools and compare.
+
+**Prove it:** the repo with passing tests and the custom instructions file, plus the review log. A partner runs your scripts from the README alone.
+
+**Certs:** GH-300 (use GitHub Copilot responsibly 15–20%, GitHub Copilot features 25–30%, data and architecture 10–15%, prompt engineering and context crafting 10–15%, developer productivity 10–15%, privacy, content exclusions and safeguards 10–15%).
+
+**Gate: GH-300** happens here, with one review week. Take the free practice assessment on Microsoft Learn first.
