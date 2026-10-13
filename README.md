@@ -11,7 +11,7 @@ This is a download kit. Nothing in this repo is deployed to the website; the sit
 | File | What it's for |
 | --- | --- |
 | [SKILL-MAP.md](SKILL-MAP.md) | Which skill areas each certification tests. This is where the overlap is |
-| [SPRINTS.md](SPRINTS.md) | The 17 sprints (3 Foundations, 14 core), with labs, deliverables and exam gates |
+| [SPRINTS.md](SPRINTS.md) | The 18 sprints (3 Foundations, 14 core, 1 Cisco networking), with labs, deliverables and exam gates |
 | [TRACKS.md](TRACKS.md) | Paths for different roles, including skills-only |
 | [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md) | VM layout, networks, snapshots, Azure sandbox rules |
 | [ASSESSMENT.md](ASSESSMENT.md) | Proficiency levels, peer review and exam readiness |
@@ -20,7 +20,7 @@ This is a download kit. Nothing in this repo is deployed to the website; the sit
 
 ## Certifications covered
 
-CompTIA A+ and Network+ (Foundations), Microsoft AZ-802 and AZ-104, CompTIA Cloud+, Security+ and Linux+, and LPIC-1, 2 and 3. Exam versions change, so re-check the official pages before booking.
+CompTIA A+ and Network+ (Foundations), Cisco CCNA (Networking), Microsoft AZ-802 and AZ-104, CompTIA Cloud+, Security+ and Linux+, and LPIC-1, 2 and 3. Exam versions change, so re-check the official pages before booking.
 
 ## How to use it
 

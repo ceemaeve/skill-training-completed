@@ -2,7 +2,7 @@
 
 Copy this file to `deliverables/<your-name>/PROGRESS.md` and fill it in as you go.
 
-**Track:** A / B / C / D / E / F
+**Track:** A / B / C / D / E / F / G
 **Start date:**
 **Hours per week:**
 
@@ -27,6 +27,7 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | S11 | Security operations, governance, risk | | | | [ ] |
 | S12 | Containers, virtualization, HA | | | | [ ] |
 | S13 | Capstone | | | | [ ] |
+| N1 | Cisco routing and switching | | | | [ ] |
 
 ## Exams
 
@@ -43,6 +44,7 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | Security+ | [ ] | | | |
 | LPIC-2 | [ ] | | | |
 | LPIC-3 (track: ) | [ ] | | | |
+| CCNA | [ ] | | | |
 
 ## Notes and lessons
 

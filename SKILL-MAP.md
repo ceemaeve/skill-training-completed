@@ -31,6 +31,14 @@ This is a judgment call based on the official outlines and study guides read on 
 
 Network+ also overlaps the core path: S1 (networking and name resolution) and S6 (security and hardening) go deeper on the same topics.
 
+**Networking (Track G)**
+
+| Skill area | Sprint | CCNA |
+| --- | --- | --- |
+| Networking fundamentals | F2 | ◐ |
+| Networking and name resolution | S1 | ◐ |
+| Cisco routing and switching | N1 | ● |
+
 ## How to read it
 
 - A skill area with several ● or ◐ marks is where one sprint pays off across multiple exams. Networking, identity, storage and security are the biggest.
@@ -39,6 +47,7 @@ Network+ also overlaps the core path: S1 (networking and name resolution) and S6
 
 ## Suggested emphasis by exam (from published domain weights)
 
+- **CCNA 200-301 v2.0:** infrastructure and connectivity 25%, switching and network access 25%, IP routing 20%, network services and security 20%, AI and network operations 10%.
 - **A+ Core 1 220-1201:** hardware and network troubleshooting 28%, hardware 25%, networking 23%, mobile devices 13%, virtualization and cloud computing 11%.
 - **A+ Core 2 220-1202:** operating systems 28%, security 28%, software troubleshooting 23%, operational procedures 21%.
 - **Network+ N10-009:** troubleshooting 24%, concepts 23%, implementation 20%, operations 19%, security 14%.
