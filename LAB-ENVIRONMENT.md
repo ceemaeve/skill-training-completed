@@ -68,6 +68,15 @@ Delete old snapshots regularly. A long snapshot chain slows the disk and eats sp
 5. Never put real credentials, personal data or production settings in the lab.
 6. Do not link the lab tenant to your employer's or any production tenant.
 
+## AWS sandbox rules (Track H)
+
+1. Use a new AWS account of your own. Check the current Free Tier terms when you sign up, because they change.
+2. Put MFA on the root user, then sign in with an IAM Identity Center user instead.
+3. Set a budget alert before creating anything.
+4. Tag everything with `owner` and `sprint`.
+5. Delete what you build when the lab is finished. NAT gateways, load balancers and RDS bill by the hour.
+6. Never put real credentials, personal data or production settings in the lab, and do not link the account to your employer's AWS organization.
+
 ## Backups of the lab itself
 
 - Copy your VM folders or export the key VMs (DC1, SRV1, LNX1) to an external drive after major milestones.

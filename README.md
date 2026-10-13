@@ -1,6 +1,6 @@
 # Skill Training Completed: study kit
 
-A skills-first study path from IT basics through Windows Server, Azure, Linux, Cisco networking, cloud and security. It is built around a VMware Workstation home lab. Certifications are optional gates along the way, not the structure. Written for a small team, and usable on your own.
+A skills-first study path from IT basics through Windows Server, Azure, AWS, Linux, Cisco networking, cloud and security. It is built around a VMware Workstation home lab. Certifications are optional gates along the way, not the structure. Written for a small team, and usable on your own.
 
 Site and calendar: https://skills.ceema.dev, part of [ceema.dev](https://ceema.dev)
 
@@ -11,16 +11,16 @@ This is a download kit. Nothing in this repo is deployed to the website; the sit
 | File | What it's for |
 | --- | --- |
 | [SKILL-MAP.md](SKILL-MAP.md) | Which skill areas each certification tests. This is where the overlap is |
-| [SPRINTS.md](SPRINTS.md) | The 18 sprints (3 Foundations, 14 core, 1 Cisco networking), with labs, deliverables and exam gates |
+| [SPRINTS.md](SPRINTS.md) | The 19 sprints (3 Foundations, 14 core, 1 Cisco networking, 1 AWS), with labs, deliverables and exam gates |
 | [TRACKS.md](TRACKS.md) | Paths for different roles, including skills-only |
-| [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md) | VM layout, networks, snapshots, Azure sandbox rules |
+| [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md) | VM layout, networks, snapshots, Azure and AWS sandbox rules |
 | [ASSESSMENT.md](ASSESSMENT.md) | Proficiency levels, peer review and exam readiness |
 | [PROGRESS-TEMPLATE.md](PROGRESS-TEMPLATE.md) | Copy this to track your own progress |
 | [CERT-NOTES.md](CERT-NOTES.md) | Exam facts as checked on 2026-10-13 |
 
 ## Certifications covered
 
-CompTIA A+ and Network+ (Foundations), Cisco CCNA (Networking), Microsoft AZ-802 and AZ-104, CompTIA Cloud+, Security+ and Linux+, and LPIC-1, 2 and 3. Exam versions change, so re-check the official pages before booking.
+CompTIA A+ and Network+ (Foundations), Cisco CCNA (Networking), AWS Certified Solutions Architect – Associate (AWS), Microsoft AZ-802 and AZ-104, CompTIA Cloud+, Security+ and Linux+, and LPIC-1, 2 and 3. Exam versions change, so re-check the official pages before booking.
 
 ## How to use it
 

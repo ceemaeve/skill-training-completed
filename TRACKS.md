@@ -20,6 +20,16 @@ For network administration, network operations center (NOC) and network support 
 - About 15 weeks at 8 hours per week.
 - New to IT? Do Track F first, then go straight to S0.
 
+## Track H: AWS (Solutions Architect – Associate)
+
+For cloud jobs on AWS.
+
+- Do S0, S1, S9 and A1 (see SPRINTS.md). S0 builds the lab that S1 needs.
+- In S9, skip lab 3 (it needs the file server from S5) and lab 5 (Azure cost alerts; A1 lab 1 does the AWS version). In lab 2, use AWS as the second cloud.
+- Sit AWS Solutions Architect – Associate after A1.
+- About 14 weeks at 8 hours per week.
+- New to IT? Do Track F first, then go straight to S0.
+
 ## Track A: Skills only (no exams)
 
 For people who want the capability without the certificate.
@@ -52,7 +62,7 @@ For people who want the capability without the certificate.
 
 ## Track E: Everyone
 
-- Every sprint except N1 (Cisco): F1 to F3, then S0 to S13, with all their exam gates, A+ and Network+ included. About 68 weeks at 8 hours per week. CCNA is not in Track E; add N1 and its gate (6 weeks) if you want it.
+- Every sprint except N1 (Cisco) and A1 (AWS): F1 to F3, then S0 to S13, with all their exam gates, A+ and Network+ included. About 68 weeks at 8 hours per week. CCNA and AWS are not in Track E; add N1 and its gate (6 weeks) for CCNA, or A1 and its gate (6 weeks) for AWS.
 - Already past the basics? Start at S0 and skip the Foundations block (54 weeks).
 
 ## Choosing
@@ -63,7 +73,8 @@ For people who want the capability without the certificate.
 | Network administration or a NOC | G (Track F first if new to IT) |
 | Windows and Microsoft 365 administration | B |
 | Linux server administration | C |
-| Cloud engineering | B, then S9 and Cloud+ |
+| Cloud engineering on Azure | B, then S9 and Cloud+ |
+| Cloud engineering on AWS | H |
 | Security or compliance | D |
 | A mix, or growing into a senior generalist | E |
 | Not interested in exams | A, with the other track's sprints as a guide |

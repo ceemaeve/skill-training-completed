@@ -28,6 +28,7 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | S12 | Containers, virtualization, HA | | | | [ ] |
 | S13 | Capstone | | | | [ ] |
 | N1 | Cisco routing and switching | | | | [ ] |
+| A1 | AWS core services | | | | [ ] |
 
 ## Exams
 
@@ -45,6 +46,7 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | LPIC-2 | [ ] | | | |
 | LPIC-3 (track: ) | [ ] | | | |
 | CCNA | [ ] | | | |
+| AWS Solutions Architect – Associate | [ ] | | | |
 
 ## Notes and lessons
 
