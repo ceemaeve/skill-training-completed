@@ -47,6 +47,10 @@ Network+ also overlaps the core path: S1 (networking and name resolution) and S6
 | Cloud architecture and operations | S9 | ◐ |
 | AWS core services | A1 | ● |
 
+**Claude (C1 in every track; C2 and C3 for Track I)**
+
+The Claude sprints don't map to an exam. They support every other sprint: C1 makes Claude a study partner you check, C2 helps with the scripts in S8 and S10, and C3 turns a lab chore into a Skill.
+
 ## How to read it
 
 - A skill area with several ● or ◐ marks is where one sprint pays off across multiple exams. Networking, identity, storage and security are the biggest.

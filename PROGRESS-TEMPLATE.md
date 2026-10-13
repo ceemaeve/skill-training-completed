@@ -10,6 +10,7 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 
 | Sprint | Skill area | Level | Deliverable link | Peer reviewer | Done |
 | --- | --- | --- | --- | --- | --- |
+| C1 | Claude basics | | | | [ ] |
 | F1 | Hardware, devices and troubleshooting | | | | [ ] |
 | F2 | Networking fundamentals | | | | [ ] |
 | F3 | Operating systems, security and support | | | | [ ] |
@@ -29,6 +30,8 @@ Level key: 0 not started, 1 guided, 2 independent, 3 can teach.
 | S13 | Capstone | | | | [ ] |
 | N1 | Cisco routing and switching | | | | [ ] |
 | A1 | AWS core services | | | | [ ] |
+| C2 | Claude for IT work | | | | [ ] |
+| C3 | Skills and agents | | | | [ ] |
 
 ## Exams
 
