@@ -1,6 +1,6 @@
 # Sprint plan
 
-Eighteen sprints: three Foundations sprints (F1 to F3) for people new to IT, the fourteen core sprints (S0 through S13), and one Cisco networking sprint (N1) for Track G. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
+Nineteen sprints: three Foundations sprints (F1 to F3) for people new to IT, the fourteen core sprints (S0 through S13), one Cisco networking sprint (N1) for Track G, and one AWS sprint (A1) for Track H. Each teaches one skill area end to end, then ends with a "prove it" deliverable that someone else can check.
 
 **Pacing assumption:** about 8 hours per week (3 reading or video, 4 hands-on lab, 1 review). Change the pace and the calendar moves, but not the order. Week counts below are planning estimates.
 
@@ -28,6 +28,16 @@ Every lab in this file assumes the layout in [LAB-ENVIRONMENT.md](LAB-ENVIRONMEN
 | S1 | Networking and name resolution | 3 | 9 |
 | N1 | Cisco routing and switching | 4 | 13 |
 | **Gate** | **CCNA** (2 review weeks) | 2 | 15 |
+
+**AWS (Track H)**
+
+| Step | Skill area | Weeks | Running total |
+| --- | --- | --- | --- |
+| S0 | Lab and foundations | 2 | 2 |
+| S1 | Networking and name resolution | 3 | 5 |
+| S9 | Cloud architecture and operations | 3 | 8 |
+| A1 | AWS core services | 4 | 12 |
+| **Gate** | **AWS Solutions Architect – Associate** (2 review weeks) | 2 | 14 |
 
 **Core path (S0 to S13)**
 
@@ -418,3 +428,32 @@ One Cisco sprint for people heading into network administration or a network ope
 **Certs:** CCNA v2.0 (infrastructure and connectivity 25%, switching and network access 25%, IP routing 20%, network services and security 20%, AI and network operations 10%).
 
 **Gate: CCNA (200-301)** happens here, with two review weeks.
+
+---
+
+## AWS (Track H)
+
+One AWS sprint for people heading into cloud jobs on AWS. It builds on S1 (networking) and S9 (cloud architecture) and leads to AWS Certified Solutions Architect – Associate.
+
+**AWS lab:** your own AWS account, set up under the AWS sandbox rules in [LAB-ENVIRONMENT.md](LAB-ENVIRONMENT.md). Some services in these labs are billed by the hour even on a new account, so build, test and delete in the same session.
+
+## A1. AWS core services (4 weeks)
+
+**Outcome:** you can design and build a secure, resilient AWS environment and defend what it costs.
+
+**Skills:** IAM users, roles and policies, IAM Identity Center, AWS Organizations and service control policies, VPC design (subnets, route tables, internet and NAT gateways, security groups, network ACLs, VPC endpoints), EC2, Auto Scaling and Elastic Load Balancing, S3 storage classes and lifecycle rules, EBS and EFS, RDS and DynamoDB, Route 53 and CloudFront, KMS encryption, CloudWatch and CloudTrail, Multi-AZ and backup design, the AWS Pricing Calculator and Cost Explorer.
+
+**Labs**
+1. Account safety: put MFA on the root user and stop using it. Create your admin user in IAM Identity Center, set a budget alert and turn on CloudTrail.
+2. Network: build a VPC across two Availability Zones with public and private subnets, a NAT gateway and security groups. Use the addressing rules from S1. The NAT gateway is billed by the hour, so delete it when the lab is done.
+3. Compute: run a web tier on EC2 behind an Application Load Balancer in an Auto Scaling group. Stop one instance and watch it get replaced.
+4. Data: put the database on RDS with Multi-AZ and the files in S3 with versioning, encryption and a lifecycle rule. Delete an object, then get it back.
+5. Your S9 design on AWS: build the three-tier design from S9. Price it in the AWS Pricing Calculator and compare it with your S9 estimate.
+6. Watch and trace: set a CloudWatch alarm on the load balancer. A partner changes a security group; find the change and who made it in CloudTrail.
+7. Tear down: delete everything, then check Cost Explorer and the billing page show nothing still running.
+
+**Prove it:** an architecture document for the lab 5 build: diagram, addressing table, IAM design, cost estimate, what happens when an Availability Zone fails, and the teardown check.
+
+**Certs:** AWS Solutions Architect – Associate SAA-C03 (secure architectures 30%, resilient architectures 26%, high-performing architectures 24%, cost-optimized architectures 20%).
+
+**Gate: AWS Solutions Architect – Associate (SAA-C03)** happens here, with two review weeks. Check AWS's exam page for a new version before you book.
